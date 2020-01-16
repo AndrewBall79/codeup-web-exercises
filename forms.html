@@ -5,35 +5,59 @@
     <title>Register With Us</title>
 </head>
 <body>
-<form action="https://hookb.in/b9J36Wog36C1Md8mqxre"></form>
-<h3>Enter Your Email Address</h3>
-<input type="text" name="email" placeholder="Enter Your Email Address">
-<br>
-<h3>Enter Your Password</h3>
 
-<input type="password" name="password" placeholder="Enter Your Password">
-<br>
-<h3>Tell Us About Yourself</h3>
-<textarea name="bio" placeholder="Tell us about yourself"></textarea>
-<br>
-<h3>How did you hear about us?</h3>
-Billboard <input type="radio" name="billboard" value="billboard"><br>
-Radio <input type="radio" name="radio advertisement" value="radio advertisement"><br>
-Internet <input type="radio" name="internet advertisement" value="internet advertisement"><br>
-Other <input type="radio" name="other" value="other"><br>
-<h3>What web browser are you using?</h3>
-<select name="browser">
+<form method="POST" action="https://hookb.in/lJazMM6W1PCqma9QNDmg">
+
+    <label for="email"> Enter Your Email Address:</label>
+    <br>
+    <br>
+    <input type="email" id="email" name="email" placeholder="Enter Your Email Address">
+    <br>
+    <br>
+    <label for="password"> Enter Your Email Password:</label>
+    <br>
+    <br>
+
+    <input id="password" type="password" name="password" placeholder="Enter Your Password">
+    <br>
+    <br>
+
+    <label for="bio"> Tell Us About Yourself:</label>
+    <br>
+    <br>
+    <textarea id="bio" name="bio" placeholder="Tell us about yourself"></textarea>
+    <br>
+        <section>
+    <h3>How did you hear about us?</h3>
+            <label for="billboard">Billboard</label>
+            <input type="radio" id="billboard" name="billboard" value="billboard"><br>
+
+            <label for="radio">Radio</label>
+            <input id="radio" type="radio" name="radio advertisement" value="radio advertisement"><br>
+
+            <label for="internet">Internet</label>
+            <input id="internet" type="radio" name="internet advertisement" value="internet advertisement"><br>
+
+            <label for="other">Other</label>
+            <input id="other" type="radio" name="other" value="other"><br>
+            </section>
+    <br>
+    <br>
+    <label for="browser">What Browser Are you Using</label><br>
+    <select id="browser name="browser">
     <option value="ie">Internet Explorer</option>
     <option value="firefox">Firefox</option>
     <option value="AOL">AOL Explorer</option>
     <option value="netscape">Netscape</option>
     <option value="AOL">AOL Explorer</option>
     <option value="java">Hot Java</option>
-    <br>
-    <br>
-
 </select>
+    </section>
+    <br>
+    <br>
+<button type="submit">Click This Button To Submit</button>
 
 
+</form>
 </body>
 </html>

@@ -1,0 +1,29 @@
+
+
+h1 {
+    color: purple; /* here's the header color */
+    text-decoration: underline;
+    font-family: Helvetica;
+    background-color: black;
+}
+h2 {
+    color: dodgerblue; /* single line comment */
+    font-family: "Apple SD Gothic Neo";
+    font-family: Helvetica;
+    border: dodgerblue 2px solid;
+    background-color: black;
+
+}
+li {
+    color: indigo;
+    font-family: Helvetica;
+
+}
+th, td {
+    color: indigo;
+    font-family: Helvetica;
+
+}
+h2.product {
+    color: hotpink;
+}
