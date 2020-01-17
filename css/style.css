@@ -1,10 +1,9 @@
 
 
 h1 {
-    color: #167969; /* here's the header color */
-    font-family: 'Odibee Sans', cursive;
+    color: rgba(22,121,105, .3); /* here's the header color */
+    font-family: 'Odibee Sans';
     font-size: 9vh;
-    font-weight: black;
     text-align: center;
     text-decoration: line-through rgba(240, 255, 0, .6) ;
     -webkit-text-stroke-width: .1px;
@@ -16,16 +15,8 @@ h1 {
 
 
 }
-p {
-    font-size: 3vh;
-    text-align: center;
-    border-radius: 4px;
-    background-color: rgba(100, 200, 100, .6);
-    box-shadow: 0 0 20px black;
-
-}
 h2 {
-    color: #167969; /* here's the header color */
+    color: rgba(22,121,105, .6); /* here's the header color */
     font-family: 'Odibee Sans', cursive;
     font-size: 6vh;
     font-weight: black;
@@ -36,10 +27,18 @@ h2 {
     text-shadow: 0px 0px 6px rgba(240, 255, 0, .8);
     /*color: dodgerblue; !* single line comment *!*/
     /*font-family: "Heiti TC";*/
-    border: rgba(47,79,79,.5) 2px solid;
-    border-radius: 4px;
+    border: rgba(47,79,79,.5) 4px solid;
+    border-radius: 40px;
     background-color: darkgrey;
     box-shadow: 0px 0px 20px grey;
+}
+p {
+    font-size: 3vh;
+    text-align: center;
+    border-radius: 4px;
+    background-color: rgba(100, 200, 100, .2);
+    box-shadow: 0 0 20px black;
+
 }
 li {
     color: black;
@@ -48,12 +47,19 @@ li {
 
 
 }
+table {
+    box-shadow: 0 0 20px grey;
+    border: rgba(47,79,79,.5) 2px solid;
+    transition: all .2s ease-in-out;
+    border-radius: 20px;
+    padding: 10px;
+}
 th, td {
     color: black;
     font-family: "Heiti TC";
     text-align: center;
     border: rgba(47,79,79,.5) 2px solid;
-    border-radius: 4px;
+    border-radius: 100px;
     padding: 6px;
     text-shadow: 0px 0px 6px rgba(240, 255, 0, .5);
 
@@ -112,12 +118,6 @@ ul { list-style: circle;
 
 }
 ol { list-style: upper-alpha; }
-table {
-    box-shadow: 0 0 20px grey;
-    border: rgba(47,79,79,.5) 2px solid;
-    transition: all .2s ease-in-out;
-    border-radius: 4px;
-}
 .img-hover-zoom {
     height: 300px; /* [1.1] Set it as per your need */
     overflow: hidden; /* [1.2] Hide the overflowing of child elements */
