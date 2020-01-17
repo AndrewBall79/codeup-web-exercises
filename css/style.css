@@ -1,29 +1,147 @@
 
 
 h1 {
-    color: purple; /* here's the header color */
-    text-decoration: underline;
-    font-family: Helvetica;
-    background-color: black;
-}
-h2 {
-    color: dodgerblue; /* single line comment */
-    font-family: "Apple SD Gothic Neo";
-    font-family: Helvetica;
-    border: dodgerblue 2px solid;
-    background-color: black;
+    color: #167969; /* here's the header color */
+    font-family: 'Odibee Sans', cursive;
+    font-size: 9vh;
+    font-weight: black;
+    text-align: center;
+    text-decoration: line-through rgba(240, 255, 0, .6) ;
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: black ;
+    text-shadow: 0px 0px 20px grey;
+    box-shadow: 0px 0px 20px grey;
+    border-radius: 4px;
+
 
 }
+p {
+    text-align: center;
+}
+h2 {
+    color: #167969; /* here's the header color */
+    font-family: 'Odibee Sans', cursive;
+    font-size: 6vh;
+    font-weight: black;
+    text-align: center;
+    text-decoration: line-through rgba(240, 255, 0, .6) ;
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 0px 0px 6px rgba(240, 255, 0, .8);
+    /*color: dodgerblue; !* single line comment *!*/
+    /*font-family: "Heiti TC";*/
+    border: rgba(47,79,79,.5) 2px solid;
+    border-radius: 4px;
+    background-color: darkgrey;
+    box-shadow: 0px 0px 20px grey;
+}
 li {
-    color: indigo;
-    font-family: Helvetica;
+    color: black;
+    font-family: "Heiti TC";
+    text-shadow: 1px 2px rgba(240, 255, 0, .6);
+
 
 }
 th, td {
-    color: indigo;
-    font-family: Helvetica;
+    color: black;
+    font-family: "Heiti TC";
+    text-align: center;
+    border: rgba(47,79,79,.5) 2px solid;
+    border-radius: 4px;
+
 
 }
-h2.product {
-    color: hotpink;
+#container {
+    color: #167969;
+    text-align: center;
+}
+
+.premium {
+    color: black;
+    text-shadow: goldenrod;
+    background-color: goldenrod;
+    font-size: 18px;
+}
+
+.percent {
+    color: black;
+    text-shadow: goldenrod;
+    background-color: rgba(218,165,32,.6);
+}
+}
+a:link, a:visited, a:active {
+    color: black;
+}
+a:hover {
+    color: fuchsia;
+}
+* {
+}
+body {
+    background-color: rgba(218, 165, 32, .1);
+    /*background-image: url("../images/codeup-arrow.png");*/
+    /*background-size: contain;*/
+}
+/*div {*/
+/*    width: 200px;*/
+/*    height: 200px;*/
+/*    display: block;*/
+/*    position: relative;*/
+/*}*/
+
+/*div::after {*/
+/*    content: "";*/
+/*    background: url("../images/codeup-arrow.png");*/
+/*    opacity: 0.5;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    bottom: 0;*/
+/*    right: 0;*/
+/*    position: absolute;*/
+/*    z-index: -1;*/
+/*}*/
+}
+ul { list-style: circle;
+
+}
+ol { list-style: upper-alpha; }
+table {
+    align: center;
+    box-shadow: 0px 0px 20px grey;
+    border: grey 4px solid;
+    border: rgba(47,79,79,.5) 2px solid;
+    transition: all .2s ease-in-out;
+    border-radius: 4px;
+
+
+}
+.img-hover-zoom {
+    height: 300px; /* [1.1] Set it as per your need */
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+    transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+    transform: scale(1.5);
+}
+
+.center {
+    text-align: left;
+    list-style-position: inside;
+}
+div {
+    width: 300px;
+    border: 2px solid grey;
+    padding: 10px;
+    margin: auto;
+    border-radius: 8px;
+    background-color: rgba(211,211,211,.3);
+    box-shadow: 0px 0px 10px grey;
+
+
 }
