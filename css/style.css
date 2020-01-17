@@ -9,14 +9,20 @@ h1 {
     text-decoration: line-through rgba(240, 255, 0, .6) ;
     -webkit-text-stroke-width: .1px;
     -webkit-text-stroke-color: black ;
-    text-shadow: 0px 0px 20px grey;
-    box-shadow: 0px 0px 20px grey;
+    text-shadow: 0 0 20px grey;
+    box-shadow: 0 0 20px grey;
     border-radius: 4px;
+    background-color: rgba(440, 455, 300, .7);
 
 
 }
 p {
+    font-size: 3vh;
     text-align: center;
+    border-radius: 4px;
+    background-color: rgba(100, 200, 100, .6);
+    box-shadow: 0 0 20px black;
+
 }
 h2 {
     color: #167969; /* here's the header color */
@@ -48,7 +54,8 @@ th, td {
     text-align: center;
     border: rgba(47,79,79,.5) 2px solid;
     border-radius: 4px;
-
+    padding: 6px;
+    text-shadow: 0px 0px 6px rgba(240, 255, 0, .5);
 
 }
 #container {
@@ -59,7 +66,7 @@ th, td {
 .premium {
     color: black;
     text-shadow: goldenrod;
-    background-color: goldenrod;
+    background-color: yellow;
     font-size: 18px;
 }
 
@@ -78,8 +85,8 @@ a:hover {
 * {
 }
 body {
-    background-color: rgba(218, 165, 32, .1);
-    /*background-image: url("../images/codeup-arrow.png");*/
+    /*background-image: url("../images/tech_background.jpeg");*/
+    background-color: rgba(218,165,32,.2);
     /*background-size: contain;*/
 }
 /*div {*/
@@ -106,14 +113,10 @@ ul { list-style: circle;
 }
 ol { list-style: upper-alpha; }
 table {
-    align: center;
-    box-shadow: 0px 0px 20px grey;
-    border: grey 4px solid;
+    box-shadow: 0 0 20px grey;
     border: rgba(47,79,79,.5) 2px solid;
     transition: all .2s ease-in-out;
     border-radius: 4px;
-
-
 }
 .img-hover-zoom {
     height: 300px; /* [1.1] Set it as per your need */
