@@ -1,44 +1,50 @@
 
-
+/*This is the headline font styling*/
 h1 {
     color: rgba(22,121,105, .3); /* here's the header color */
-    font-family: 'Odibee Sans';
+    font-family: 'Odibee Sans', cursive;
+    /*font-family: Helvetica;*/
+    font-weight: bolder;
     font-size: 9vh;
     text-align: center;
-    text-decoration: line-through rgba(240, 255, 0, .6) ;
+    text-decoration: line-through rgba(240, 255, 0, .5) ;
     -webkit-text-stroke-width: .1px;
     -webkit-text-stroke-color: black ;
     text-shadow: 0 0 20px grey;
     box-shadow: 0 0 20px grey;
     border-radius: 4px;
     background-color: rgba(440, 455, 300, .7);
-
-
 }
+/*this is styling for the subheading elements*/
 h2 {
     color: rgba(22,121,105, .6); /* here's the header color */
     font-family: 'Odibee Sans', cursive;
     font-size: 6vh;
-    font-weight: black;
     text-align: center;
-    text-decoration: line-through rgba(240, 255, 0, .6) ;
+    text-decoration: line-through rgba(240, 255, 0, .4) ;
     -webkit-text-stroke-width: .1px;
     -webkit-text-stroke-color: black;
-    text-shadow: 0px 0px 6px rgba(240, 255, 0, .8);
-    /*color: dodgerblue; !* single line comment *!*/
-    /*font-family: "Heiti TC";*/
+    text-shadow: 0 0 6px rgba(240, 255, 0, .8);
     border: rgba(47,79,79,.5) 4px solid;
     border-radius: 40px;
     background-color: darkgrey;
-    box-shadow: 0px 0px 20px grey;
+    box-shadow: 0 0 20px grey;
+    width: 70%;
+    margin: 0 auto;
 }
 p {
     font-size: 3vh;
     text-align: center;
-    border-radius: 4px;
-    background-color: rgba(100, 200, 100, .2);
-    box-shadow: 0 0 20px black;
-
+    border-radius: 20px;
+    background-color: rgba(100, 100, 100, .2);
+    box-shadow: 0 0 20px grey;
+    width: 70%;
+    margin: 0 auto;
+    border: rgba(47,79,79,.5) 2px dotted;
+    padding: 2px;
+}
+p2 {
+    float: right;
 }
 li {
     color: black;
@@ -50,18 +56,30 @@ li {
 table {
     box-shadow: 0 0 20px grey;
     border: rgba(47,79,79,.5) 2px solid;
-    transition: all .2s ease-in-out;
     border-radius: 20px;
-    padding: 10px;
+    padding: 2px;
 }
-th, td {
+td {
     color: black;
     font-family: "Heiti TC";
     text-align: center;
     border: rgba(47,79,79,.5) 2px solid;
     border-radius: 100px;
     padding: 6px;
-    text-shadow: 0px 0px 6px rgba(240, 255, 0, .5);
+    text-shadow: 0 0 6px rgba(240, 255, 0, .5);
+}
+#image-box {
+    box-shadow: 0 0 20px grey;
+    /*border: rgba(47,79,79,.5) 10px solid;*/
+    border-radius: 300px;
+    padding: 60px;
+}
+.img-hover-zoom {
+    height: 100px;
+    /* [1.1] Set it as per your need */
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+    border-radius: 300px;
+    box-shadow: 0 0 20px grey;
 
 }
 #container {
@@ -95,33 +113,11 @@ body {
     background-color: rgba(218,165,32,.2);
     /*background-size: contain;*/
 }
-/*div {*/
-/*    width: 200px;*/
-/*    height: 200px;*/
-/*    display: block;*/
-/*    position: relative;*/
-/*}*/
-
-/*div::after {*/
-/*    content: "";*/
-/*    background: url("../images/codeup-arrow.png");*/
-/*    opacity: 0.5;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    bottom: 0;*/
-/*    right: 0;*/
-/*    position: absolute;*/
-/*    z-index: -1;*/
-/*}*/
 }
 ul { list-style: circle;
 
 }
 ol { list-style: upper-alpha; }
-.img-hover-zoom {
-    height: 300px; /* [1.1] Set it as per your need */
-    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
-}
 
 /* [2] Transition property for smooth transformation of images */
 .img-hover-zoom img {
@@ -144,7 +140,25 @@ div {
     margin: auto;
     border-radius: 8px;
     background-color: rgba(211,211,211,.3);
-    box-shadow: 0px 0px 10px grey;
+    box-shadow: 0 0 10px grey;
 
 
 }
+/*div {*/
+/*    width: 200px;*/
+/*    height: 200px;*/
+/*    display: block;*/
+/*    position: relative;*/
+/*}*/
+
+/*div::after {*/
+/*    content: "";*/
+/*    background: url("../images/codeup-arrow.png");*/
+/*    opacity: 0.5;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    bottom: 0;*/
+/*    right: 0;*/
+/*    position: absolute;*/
+/*    z-index: -1;*/
+/*}*/
