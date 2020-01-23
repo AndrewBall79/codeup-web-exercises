@@ -67,12 +67,13 @@ a {
 
 .container {
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
+    align-items: center;
     /* This is a flex container */
 }
 
 .card {
-
-    align-self: center;
+    flex-basis: 100%;
+    /*align-self: center;*/
 
 }

@@ -13,7 +13,6 @@ body {
 }
 
 .puppiness {
-    display: flex;
     height: 100%;
     position: absolute;
     top: 0;
@@ -22,22 +21,17 @@ body {
 }
 
 .cover {
-
     height: 100vh;
     width: 100%;
 }
 
 .flex-form {
-    display: flex;
     z-index: 10;
-    position: relative;
     border:20px solid rgba(0,0,0,0.3);
     border-radius:5px;
 }
 
 .flex-form > * {
-    display: flex;
-    justify-content: flex-end;
     border: 0;
     padding: 10px;
     background: white;
@@ -65,12 +59,11 @@ body {
 }
 .flex-form {
     display: flex;
-
+    margin: auto;
     /* flex items */
 }
 .destination {
-    display: flex;
-    flex-basis: 30%;
+    flex-basis: 15em;
 
     /* bigger item */
 }
