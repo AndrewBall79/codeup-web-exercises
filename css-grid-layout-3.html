@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Layout 3</title>
+    <style>
+
+        main {
+            background: white;
+            display: grid;
+            grid-template-rows:  20% 19% 18% 19%;
+            grid-template-columns: 24% 25% 24% 24%;
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;
+            height: 100vh;
+            width: 100vw;
+            grid-template-areas:
+                    " Header Header Header Header "
+                    " Side Title1 Blurb Blurb "
+                    " Side Article Article Comment"
+                    " Side Ad1 Ad2 Ad3 "
+                    " Side Footer Footer Footer";
+        }
+        .font {
+            padding: 10px;
+            color: white;
+            font-size: 30px;
+        }
+        .div1 { ;
+            grid-area: Header;
+            background: gold;
+        }
+        .div2 { ;
+            grid-area: Side;
+            background: gold;
+        }
+        .div3 { ;
+            grid-area: Title1;
+            background: gold;
+        }
+        .div4 { ;
+            grid-area: Blurb;
+            background: gold;
+        }
+        .div5 { ;
+            grid-area: Article;
+            background: gold;
+        }
+        .div6 { ;
+            grid-area: Comment;
+            background: gold;
+        }
+        .div7 { ;
+            grid-area: Ad1;
+            background: gold;
+        }
+
+        .div8 { ;
+            grid-area: Ad2;
+            background: gold;
+        }
+        .div9 { ;
+            grid-area: Ad3;
+            background: gold;
+        }
+        .div10 { ;
+            grid-area: Footer;
+            background: gold;
+        }
+
+    </style>
+</head>
+<body>
+<main>
+    <div class="div1 font">1</div>
+    <div class="div2 font">2</div>
+    <div class="div3 font">3</div>
+    <div class="div4 font">4</div>
+    <div class="div5 font">5</div>
+    <div class="div6 font">6</div>
+    <div class="div7 font">7</div>
+    <div class="div8 font">8</div>
+    <div class="div9 font">9</div>
+    <div class="div10 font">10</div>
+</main>
+</body>
+</html>
