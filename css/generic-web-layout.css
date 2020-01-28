@@ -268,8 +268,54 @@ nav {
     grid-area: sidespace;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 495px){
     .shrink{
         display: none;
     }
+    /*Main grid in mobile */
+    main {
+        background: lightgrey;
+        display: grid;
+        grid-template-rows: 5% 5% 73% 6% 11% 5%;
+        grid-template-columns:  82%;
+        height: 150vh;
+        width: 100vw;
+        grid-template-areas:
+                " nav nav"
+                " side side"
+                " boxd boxd"
+                " numbers numbers"
+                " footer footer"
+                " sub sub";
+    }
+
+    /*Grid Template Areas For Second Grid*/
+    .headline1-grid{
+        display: grid;
+        grid-area: boxd;
+
+        grid-template-rows: 11% 37% 10% 47% 10% 45%;
+        grid-template-columns: 85% 30%;
+        height: 70vh;
+        width: 85vw;
+        grid-template-areas:
+                "header1 a1"
+                "article1 a2"
+                "header2 a3"
+                "article2 a4"
+                "header3 a5"
+                "article3 a6";
+    }
+    .sidespace{
+        display: none;
+    }
+
+    .sidebar{
+        flex-direction: row;
+    }
+}
+.articles{
+    font-size: 16px;
+    height: auto;
+    overflow: auto;
 }
