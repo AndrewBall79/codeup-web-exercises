@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+
+@media screen and (max-width: 495px){
+
+.shrink{
+display: none;
+}
+/*Main grid in mobile */
+main {
+background: lightgrey;
+display: grid;
+grid-template-rows: 5% 5% 73% 6% 11% 5%;
+grid-template-columns:  82%;
+height: 150vh;
+width: 100vw;
+grid-template-areas:
+" nav nav"
+" side side"
+" boxd boxd"
+" numbers numbers"
+" footer footer"
+" sub sub";
+}
+
+</head>
+<body>
+
+
+<div class="box-g">
+    <div>
+        <div class="col-4 d-none d-md-inline-block">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="images/mobile-phone.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">THE ADMIN BAR AND ABSOLUTE POSITIONING</h5>
+                        </div>
+                    </div>
+
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="images/head.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">NIBBLER AWESOME WEBSITE TESTING</h5>
+                                <!--                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
+                                <!--                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="images/ipad.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">HOW TO GET GOOGLE TO LIKE YOU</h5>
+                                <!--                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
+                                <!--                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" class="col-12">
+                        <div class="card">
+                            <div class="card-body text-left" id="twitter-card">
+                                <a href="#"><i class="fab fa-twitter">Last Tweet</i></a>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+                                    consequuntur dicta, dolorem earum expedita in incidunt iusto laudantium, molestiae
+                                    necessitatibus nihil non obcaecati quam, quasi quis ut vero! Quod, voluptatibus!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+
+
+</body>
+</html>

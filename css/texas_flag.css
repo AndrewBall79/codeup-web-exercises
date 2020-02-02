@@ -9,3 +9,42 @@ p {
     border: darkred 10px solid;
     size: 300px;
 }
+
+.star{
+    display: grid;
+    width: 150px;
+    height: 150px;
+    margin-top: 125px;
+    margin-left: 10px;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background: white;
+    grid-area: star;
+
+}
+.box2{
+    display: grid;
+    width: auto;
+    height: 200px;
+    background: white;
+    grid-area: white;
+}
+
+.box4{
+    display: grid;
+    width: auto;
+    background: red;
+    height: 200px;
+    grid-area: red;
+}
+.container{
+    display: grid;
+    width: 700px;
+    height: 400px;
+    background-color: blue;
+    border: black 20px solid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+                "star white"
+                "star red";
+}
