@@ -1,0 +1,63 @@
+
+#main-jumbotron {
+    background-image: url("../images/my-website/WatercolorSkull.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+}
+
+#jumbotron-container {
+    color: white;
+
+}
+
+.embed-responsive .card-img-top {
+    object-fit: cover;
+}
+
+.top-name{
+font-family: 'Notable', sans-serif;
+    display: flex;
+    color: silver;
+    justify-content: center;
+    text-shadow: black 2px 2px 5px;
+}
+.lead {
+    display: flex;
+    font-family: 'Expletus Sans', cursive;
+    color: silver;
+    justify-content: center;
+    text-shadow: black 2px 2px 5px;
+}
+font-family: 'Odibee Sans', cursive;
+
+body, html {
+    height: 100%;
+}
+
+.bg {
+
+    background: lightgrey;
+
+}
+.navbar{
+    background: lightgrey;
+}
+.card-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+                "card1 card2";
+}
+.card1{
+    grid-area: card1;
+    display: flex;
+    justify-content: center;
+}
+
+.card2{
+    grid-area: card2;
+    display: flex;
+    justify-content: center;
+}
