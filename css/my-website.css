@@ -1,14 +1,16 @@
-
+body{
+    background: linear-gradient(rgba(100, 100, 137, .5), rgba(120,100,137, 1));
+}
 #main-jumbotron {
-    background-image: url("../images/my-website/WatercolorSkull.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 40vh;
+    /*background-image: url("../images/my-website/WatercolorSkull.jpg");*/
+    background: center;
+    background: linear-gradient(#3B94D9,rgba(100, 100, 137, .7));
+    height: 34vh;
+    display: flex;
+
 }
 
 #jumbotron-container {
-    color: white;
-
 }
 
 .embed-responsive .card-img-top {
@@ -22,6 +24,30 @@ font-family: 'Notable', sans-serif;
     justify-content: center;
     text-shadow: black 2px 2px 5px;
 }
+
+.second-name{
+    font-size: 25px;
+    font-family: 'Notable', sans-serif;
+    display: flex;
+    color: silver;
+    justify-content: center;
+    text-shadow: black 2px 2px 5px;
+}
+.forefront-element{
+    font-family: 'Expletus Sans', cursive;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: black 2px 2px 5px;
+    background: linear-gradient(rgba(100, 100, 137, .5),rgba(100, 100, 137, 1));
+    color: silver;
+    width: 100%;
+    border: silver 2px solid;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    height: 40px;
+}
 .lead {
     display: flex;
     font-family: 'Expletus Sans', cursive;
@@ -29,22 +55,63 @@ font-family: 'Notable', sans-serif;
     justify-content: center;
     text-shadow: black 2px 2px 5px;
 }
-font-family: 'Odibee Sans', cursive;
 
+.lead2 {
+    display: flex;
+    font-family: 'Expletus Sans', cursive;
+    color: silver;
+    justify-content: center;
+    text-shadow: black 2px 2px 5px;
+}
+
+.sm-banner{
+    background: linear-gradient(#3B94D9,rgba(100, 100, 137, .7));
+
+}
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 18px;
+}
+.b1{
+    background: lightskyblue;
+    height: 10px;
+}
+.b2{
+    background: royalblue;
+    color: silver;
+    height: 30px;
+    margin: 15px 0;
+}
+.b3{
+
+    background: midnightblue;
+    color: silver;
+    height: 45px;
+}
 body, html {
     height: 100%;
 }
 
 .bg {
 
-    background: lightgrey;
+    background: linear-gradient(#3B94D9,rgba(100, 100, 137, .7));
 
 }
 .navbar{
     background: lightgrey;
 }
+.main-contain{
+    background: lightslategrey;
+    border: 2px whitesmoke solid;
+    border-radius: 4px;
+    padding: 30px
+}
 .card-grid{
     display: grid;
+    column-gap: 10px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
     grid-template-areas:
@@ -61,3 +128,9 @@ body, html {
     display: flex;
     justify-content: center;
 }
+
+@media
+
+
+
+
