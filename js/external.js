@@ -47,6 +47,7 @@ alert ("Your total rental cost is $" + totalCost);
 //     for Google and 4 hours for Amazon.
 
 var classFull = confirm("Is This Class Full?");
+
 var classSchedule = confirm("Do You Have Class At This Time?");
 var enroll = (  <= 0 ! classFull & & ! classAtEight);
 alert ("You Cannot Join Class At This Time");
