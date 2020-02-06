@@ -7,19 +7,20 @@
 // var userInput = prompt('What Is Your Favorite Color?');
 // alert (userInput  + " is my favorite color too");
 
+
 // Complete exercise 3 from the previous lesson, but write
 // your code in the external.js file instead of in the console.
-//
 //     When the exercise asks you to use a number, instead
 //     use a prompt to ask the user for that number.
 //     Use an alert to show the results of each problem.
 
 
-var brotherBear = Number(prompt('How Many Days Do You Want to Rent Brother Bear For?'));
-var littleMm = Number(prompt('How Many Days Do You Want to Rent The Little Mermaid For?'));
-var hercules = Number(prompt('How Many Days Do You Want to Rent Hercules For?'));
-var totalCost = ((brotherBear + littleMm + hercules)*3);
-alert ("Your total rental cost is $" + totalCost);
+// var brotherBear = Number(prompt('How Many Days Do You Want to Rent Brother Bear For?'));
+// var littleMm = Number(prompt('How Many Days Do You Want to Rent The Little Mermaid For?'));
+// var hercules = Number(prompt('How Many Days Do You Want to Rent Hercules For?'));
+// var totalCost = ((brotherBear + littleMm + hercules)*3);
+// alert ("Your total rental cost is $" + totalCost);
+
 
 // You have rented some movies for your kids: The little
 // mermaid (for 3 days), Brother Bear(for 5 days, they love it),
@@ -29,14 +30,14 @@ alert ("Your total rental cost is $" + totalCost);
 // to pay?
 
 
-// var goog = 400
-// var ama = 380
-// var fB = 350
+// var goog = 400;
+// var ama = 380;
+// var fB = 350;
 // var googHours = Number(prompt('How Many Hours Did You Work For Google?'));
 // var amaHours = Number(prompt('How Many Hours Did You Work For Amazon?'));
 // var fBHours = Number(prompt('How Many Hours Did You Work For FaceBook?'));
-// var totalPay = (goog*googHours)+(ama*amaHours)+(fB*fBHours)
-// alert ("Your total pay for this week is $" + totalPay + " before taxes" )
+// var totalPay = (goog*googHours)+(ama*amaHours)+(fB*fBHours);
+// alert ("Your total pay for this week is $" + totalPay + " before taxes" );
 
 
 //     Suppose you're working as a contractor for 3 companies:
@@ -46,11 +47,21 @@ alert ("Your total rental cost is $" + totalCost);
 //     for this week? You worked 10 hours for Facebook, 6 hours
 //     for Google and 4 hours for Amazon.
 
-var classFull = confirm("Is This Class Full?");
 
-var classSchedule = confirm("Do You Have Class At This Time?");
-var enroll = (  <= 0 ! classFull & & ! classAtEight);
-alert ("You Cannot Join Class At This Time");
+
+
+// var classIsNotFull = confirm("class is not full");
+// var noScheduleConflicts = confirm("Schedules do not conflict");
+//
+// var studentEnrolledStatus = classIsNotFull && noScheduleConflicts;
+// alert("Student can enroll:" +  studentEnrolledStatus);
+
+
+
+// var classFull = confirm("Is This Class Full?");
+// var classSchedule = confirm("Do You Have Class At This Time?");
+// var enroll = (classFull <= 0 && classSchedule  <= 0);
+// alert ("You Cannot Join Class At This Time");
 
 
 
@@ -62,8 +73,14 @@ alert ("You Cannot Join Class At This Time");
 // with her current schedule.
 
 
-var numOfItems = prompt('How Many Items Do You Have?');
-var member = confirm('Are You A Premium Member?');
+// var offerIsValid = prompt('Is This Offer Still Valid')
+// var member = confirm('Are You A Premium Member?');
+// var numOfItems = prompt('How Many Items Do You Have?');
+//
+// var discountAppliedStatus = offerIsValid && (member || numOfItems >2)
+//
+// alert ("Did you get the discount?" + discountAppliedStatus );
+
 
 
 //     A product offer can be applied only if a person
