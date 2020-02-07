@@ -108,7 +108,7 @@ function calculateTip(billAmount, tipAmount) {
 function applyDiscount(price, discount) {
     return price - (price * discount);
 }
-console.log(applyDiscount(70111, .5));
+// console.log(applyDiscount(70111, .5));
 
 // Function Drills
 // Functions using conditionals but not loops or arrays:
@@ -116,9 +116,9 @@ console.log(applyDiscount(70111, .5));
     // Make a function named isOdd(number)
 
 function isOdd(number) {
-
+    return number % 2 === 1;
 }
-
+console.log(isOdd(12));
 // Make a function named isEven(number)
 
 function isEven(number) {
@@ -148,6 +148,8 @@ function addFive(input){
 function isMultipleOfFive(input) {
     return input % 5 === 0;
 }
+
+
 // console.log(isMultipleOfFive(input));
 // Make a function named isThree(input)
 
@@ -216,7 +218,7 @@ function isVowel(letter){
 function isConsonant(letter){
     return ['a', 'e', 'i', 'o', 'u'].indexOf(letter.toLowerCase()) !== 0
 }
-console.log(isConsonant('b'))
+// console.log(isConsonant('b'))
 
 // Make a function named isCapital(letter)
 
@@ -226,10 +228,14 @@ function isCapital(letter){
 }
 
 // Make a function named isLowerCase(letter)
-// Make a function named hasLowerCase(string) that returns if a string has any lower cased letter
-// Make a function named isSpace(letter) that returns if a character is a space character
+
+// Make a function named hasLowerCase(string) that returns if a string has
+// any lower cased letter
+// Make a function named isSpace(letter) that returns if a character
+// is a space character
 // Make a function named isZero(number)
-// Make a function named notZero(input) that returns true if the input is not zero
+// Make a function named notZero(input) that returns true if the input
+// is not zero
 // Write a function named lowerCase(string)
 // Write a function named double(n) that returns a number times two
 // Write a function named triple(n) that returns a number times 3
