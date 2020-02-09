@@ -35,6 +35,39 @@
 // }
 // console.log(userNumberPlus);
 
+//
+// function isNum(input) {
+//     return isNum(input)
+// }
+// function isEven(num){
+//     return userNumber % 2 === 0;
+// }
+// function plusOneHunderd(num) {
+//     var userNumberPlus = userNumber + 100;
+//     return  ("Your Number Plus 100 Equals:" + userNumberPlus);
+//     // var userNum = parseFloat(num);
+//     // return userNum +100;
+// }
+// function isNegative(num) {
+//     return num < 0;
+// }
+// function mainFunction(willContinue){
+//     if(willContinue){
+//         var usserInput = Number(prompt("Well Hurry Up And Do It!!");
+//         if(isNuMFunc9userInput)){
+//             var isEvenMessage = (isEven(userInput) ? "Odd Number Brah");
+//             alert(isEvenMessage)
+//             alert (plus100(userInput));
+//             var isNegativeMessage = (isNegative(userInput) ? "Number Is Neg":"Num Is Pos");
+//
+//         }
+//
+//     }
+//     else ()
+// }
+// var willContinue = confirm("Would You Like To Enter A Number?");
+
+
 
 /* ########################################################################## */
 
@@ -132,7 +165,7 @@
      * user to your `analyzeColor` function. Alert the return value from your
      * function to show it to the user.
      */
-
+//
 // var userColor = prompt("Hello Dude or Dudette, What's Your Favorite Color?");
 // alert(analyzeColor(userColor));
 
@@ -158,23 +191,27 @@
      * Test your function by passing it various values and checking for the expected
      * return value.
      */
-    var luckyNumber = Math.floor(Math.random() * 6);
-    alert("Your Lucky Number Is:" + luckyNumber);
-    var customerTotal = Number(prompt("Please Enter Your Total Bill:"));
-    function calculateTotal(luckyNumber, customerTotal) {
-        if (luckyNumber === 1) {
-            return customerTotal - (customerTotal * .1);
-        } else if (luckyNumber === 2) {
-            return customerTotal - (customerTotal * .25);
-        } else if (luckyNumber === 3) {
-            return customerTotal - (customerTotal * .35);
-        } else if (luckyNumber === 4) {
-            return customerTotal - (customerTotal * .5);
-        } else if (luckyNumber === 5) {
-            return customerTotal - (customerTotal);
-        } else alert("Sorry You Don't Qualify For A Discount At This Time");
-    }
-        alert("Your discounted total is:" + calculateTotal(luckyNumber, customerTotal));
+
+
+    // var luckyNumber = Math.floor(Math.random() * 6);
+    //
+    // alert("Your Lucky Number Is:" + luckyNumber);
+    //
+    // var customerTotal = Number(prompt("Please Enter Your Total Bill:"));
+    // function calculateTotal(luckyNumber, customerTotal) {
+    //     if (luckyNumber === 1) {
+    //         return customerTotal - (customerTotal * .1);
+    //     } else if (luckyNumber === 2) {
+    //         return customerTotal - (customerTotal * .25);
+    //     } else if (luckyNumber === 3) {
+    //         return customerTotal - (customerTotal * .35);
+    //     } else if (luckyNumber === 4) {
+    //         return customerTotal - (customerTotal * .5);
+    //     } else if (luckyNumber === 5) {
+    //         return customerTotal - (customerTotal);
+    //     } else alert("Sorry You Don't Qualify For A Discount At This Time");
+    // }
+    //     alert("Your discounted total is:" + calculateTotal(luckyNumber, customerTotal).toFixed(2));
 
 
 /**
@@ -186,31 +223,56 @@
  */
 // Generate a random number between 0 and 6
 
+// Define a function named isOdd that takes in a single input. If the input is an odd number or a string containing an odd number, return true. Any other input should return false.
+
+function isOdd(input) {
+    return input % 2 !== 0;
+}
+// console.log(isOdd("5"));
+
+// Define a function named isOdd that takes in a single input. If the input is an odd number or a string containing an odd number, return true. Any other input should return false.
+
+function isOdd(input) {
+    return parseInt(input, 10) % 2 !== 0;
+}
+// console.log(isOdd("food, 2"));
 
 
-// var pizzaChoice = prompt("What kind of pizza do you like?");
-// console.log("User pizza input: " + pizzaChoice);
+//write a function that takes in three inputs two whole numbers and one percentage returns the
+
+
+
+
+// Something which is not true is false, but something which is not not true is true! Create a function where given n number of “not”, evaluate whether it’s true or false.//
+//Even though this challenge can be easily solved through the use of an if else block, you might want to solve it through the use of a Boolean Logic Operator or a Bitwise Operator, taking the opportunity to become acquainted with these methods (check the Resources tab to find specific links).
 //
-// function pizzaMessage (pizzaPreference) {
-//     var pizzaConfirmation;
-//     switch (pizzaPreference) {
-//         case "pineapple and hot sauce":
-//             pizzaConfirmation = "What a coincidence, that's my favorite!";
-//             break;
-//         case "cheese":
-//             pizzaConfirmation = "Just plain cheese? Okay...";
-//             break;
-//         case "anchovies":
-//             pizzaConfirmation = "Barf-a-rama";
-//             break;
-//         case "ham":
-//             pizzaConfirmation = "Easy To Spell And Good";
-//             break;
-//         default:
-//             pizzaConfirmation = pizzaPreference + " isn't my favorite, but let's order some!";
-//             break;
-//     }
-//     return pizzaConfirmation;
+
+// notNotNot(1, true) ➞ false
+// // Not true
+// notNotNot(2, false) ➞ false
+// // Not not false
+// notNotNot(6, true) ➞ true
+// // Not not not not not not true
+
+
+// function notNotNot(n, input){
+//    return     ~n = input;
 // }
-// console.log(pizzaMessage(pizzaChoice));
-// alert(pizzaMessage(pizzaChoice));
+// console.log(notNotNot(4, false));
+
+
+// In JavaScript, an empty object and an empty array are both considered "truthy," but an empty string is considered false when evaluated as a Boolean (this behavior is what we call "falsey").
+// Create a function that takes an argument of any data type and returns 1 if it's truthy and 0 if it's falsy.
+
+
+// function truthyFalsy(input) {
+//         return input ? console.log('1') : console.log('0');
+// }
+// truthyFalsy([]);
+
+function convert(hours, minutes){
+    return (hours * 3600) + (minutes * 60);
+}
+console.log(convert(1, 3));
+
+
