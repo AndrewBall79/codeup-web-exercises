@@ -35,7 +35,7 @@
 // }
 // console.log(userNumberPlus);
 
-//
+
 // function isNum(input) {
 //     return isNum(input)
 // }
@@ -59,9 +59,7 @@
 //             alert(isEvenMessage)
 //             alert (plus100(userInput));
 //             var isNegativeMessage = (isNegative(userInput) ? "Number Is Neg":"Num Is Pos");
-//
 //         }
-//
 //     }
 //     else ()
 // }
@@ -193,25 +191,25 @@
      */
 
 
-    // var luckyNumber = Math.floor(Math.random() * 6);
-    //
-    // alert("Your Lucky Number Is:" + luckyNumber);
-    //
-    // var customerTotal = Number(prompt("Please Enter Your Total Bill:"));
-    // function calculateTotal(luckyNumber, customerTotal) {
-    //     if (luckyNumber === 1) {
-    //         return customerTotal - (customerTotal * .1);
-    //     } else if (luckyNumber === 2) {
-    //         return customerTotal - (customerTotal * .25);
-    //     } else if (luckyNumber === 3) {
-    //         return customerTotal - (customerTotal * .35);
-    //     } else if (luckyNumber === 4) {
-    //         return customerTotal - (customerTotal * .5);
-    //     } else if (luckyNumber === 5) {
-    //         return customerTotal - (customerTotal);
-    //     } else alert("Sorry You Don't Qualify For A Discount At This Time");
-    // }
-    //     alert("Your discounted total is:" + calculateTotal(luckyNumber, customerTotal).toFixed(2));
+    var luckyNumber = Math.floor(Math.random() * 6);
+
+    alert("Your Lucky Number Is:" + luckyNumber);
+
+    var customerTotal = Number(prompt("Please Enter Your Total Bill:"));
+    function calculateTotal(luckyNumber, customerTotal) {
+        if (luckyNumber === 1) {
+            return customerTotal - (customerTotal * .1);
+        } else if (luckyNumber === 2) {
+            return customerTotal - (customerTotal * .25);
+        } else if (luckyNumber === 3) {
+            return customerTotal - (customerTotal * .35);
+        } else if (luckyNumber === 4) {
+            return customerTotal - (customerTotal * .5);
+        } else if (luckyNumber === 5) {
+            return customerTotal - (customerTotal);
+        } else alert("Sorry You Don't Qualify For A Discount At This Time");
+    }
+        alert("Your discounted total is:" + calculateTotal(luckyNumber, customerTotal).toFixed(2));
 
 
 /**
@@ -270,9 +268,128 @@ function isOdd(input) {
 // }
 // truthyFalsy([]);
 
-function convert(hours, minutes){
-    return (hours * 3600) + (minutes * 60);
+// function convert(hours, minutes){
+//     return (hours * 3600) + (minutes * 60);
+// }
+// console.log(convert(1, 3));
+
+
+// function toNumber(input){
+//     return Number(input) + 1;
+// }
+// console.log(toNmber("123"));
+
+function andAnd(input) {
+    return (input >= 0) && (input % 2 === 0);
 }
-console.log(convert(1, 3));
+console.log(andAnd(20));
+
+
+
+
+
+function isTrue(input) {
+    return input === true;
+}
+isTrue();
+
+function isFalse(input) {
+    return input === false;
+}
+isFalse();
+
+function not(input){
+    return !input ;
+}
+not(0);
+
+function addOne(input) {
+    return parseFloat(input)+ 1;
+}
+
+
+// parse float returns numbers from non numeric strings
+
+
+function isEven(input){
+    return parseFloat(input) % 2 === 0;
+}
+isEven();
+
+
+
+function isIdentical(input, input2) {
+    return input === input2;
+}
+isIdentical();
+
+
+
+function isEqual(inputOne, inputTwo){
+    return inputOne == inputTwo;
+}
+isEqual();
+
+
+
+function or(input, input2){
+    return input || input2;
+}
+or();
+
+
+
+function and(input, input2) {
+    return input && input2;
+}
+and();
+
+
+
+function concat(input1, input2){
+    return input1.toString() + input2.toString();
+}
+concat();
+
+
+
+
+
+
+/*
+ * Write your solutions here.
+ *
+ * /
+
+
+
+ */
+/*
+* **Note**: While normally it is good practice to wrap your javascript in an
+* immediately invoked function expression (iife), you should _not_ do that
+* here. If you do, the automated tests will not be able to see your functions.
+* If you don't know what an iffe is, don't worry about it :)
+*
+* This file is for defining the following functions. See README.md for more detail.
+* isTrue
+* isFalse
+* not
+* addOne
+* isEven
+* isIdentical
+* isEqual
+* or
+* and
+* concat
+*/
+
+
+
+// Define a function named isOdd that takes in a single input. If the input is an odd number or a string containing an odd number, return true. Any other input should return false.
+
+function isOdd(input) {
+    return Number(input) % 2 !== 0;
+}
+console.log(isOdd("3"));
 
 

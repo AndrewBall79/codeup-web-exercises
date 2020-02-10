@@ -1,5 +1,6 @@
 body{
-    background: linear-gradient(rgba(100, 100, 137, .5), rgba(120,100,137, 1));
+    height: 100%;
+    background: linear-gradient(rgba(100, 100, 137, .5), rgba(100,100,137, 1));
 }
 #main-jumbotron {
     /*background-image: url("../images/my-website/WatercolorSkull.jpg");*/
@@ -35,7 +36,7 @@ font-family: 'Notable', sans-serif;
 }
 .forefront-element{
     font-family: 'Expletus Sans', cursive;
-
+    box-shadow: 2px 2px 5px black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,7 +66,7 @@ font-family: 'Notable', sans-serif;
 }
 
 .sm-banner{
-    background: linear-gradient(#3B94D9,rgba(100, 100, 137, .7));
+    background: linear-gradient(#3B94D9,rgba(100, 100, 100, .7));
 
 }
 p {
@@ -75,29 +76,114 @@ p {
     font-family: 'Odibee Sans', cursive;
     font-size: 18px;
 }
+
+.prismGrid{
+    max-width: 600px;
+
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 60% 60%;
+    grid-template-areas:
+                "prism1 prism2 prism3"
+                "prism4 prism5 prism6";
+}
+.prismWrap{
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+    border: 5px black;
+
+}
 .b1{
-    background: lightskyblue;
-    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: prism1;
+    background: lightgray;
+    height: 100px;
+    width: 200px;
+    clip-path: polygon(17% 0, 69% 18%, 100% 100%, 22% 50%);
+
+}
+.prismWrap2{
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
 }
 .b2{
-    background: royalblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: prism2;
+    background: lightgray;
     color: silver;
-    height: 30px;
-    margin: 15px 0;
+    height: 100px;
+    width: 90px;
+    clip-path: polygon(50% 100%, 20% 38%, 50% 0, 80% 38%);
+}
+.prismWrap3{
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
 }
 .b3{
-
-    background: midnightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: prism3;
+    background: lightgray;
     color: silver;
-    height: 45px;
+    height: 100px;
+    width: 200px;
+    clip-path: polygon(23% 10%, 62% 2%, 65% 50%, 0% 100%);
+
+}
+.prismWrap4{
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+    border: 5px black;
+
+}
+.b4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: prism4;
+    background: lightgray;
+    height: 100px;
+    width: 200px;
+    clip-path: polygon(17% 100%, 33% 49%, 100% 0, 62% 77%);
+
+}
+.prismWrap5{
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+}
+.b5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    grid-area: prism5;
+    background: lightgray;
+    color: silver;
+    height: 100px;
+    width: 90px;
+    clip-path: polygon(50% 100%, 24% 63%, 50% 0, 76% 63%);
+}
+.prismWrap6{
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+}
+.b6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: prism6;
+    background: lightgray;
+    color: silver;
+    height: 100px;
+    width: 200px;
+    clip-path: polygon(0 0, 76% 44%, 89% 100%, 33% 79%);
+
 }
 body, html {
     height: 100%;
 }
 
 .bg {
-
-    background: linear-gradient(#3B94D9,rgba(100, 100, 137, .7));
+    background: linear-gradient(rgba(150, 150, 150, .7),rgba(100, 100, 137, .7));
 
 }
 .navbar{
@@ -110,6 +196,7 @@ body, html {
     padding: 30px
 }
 .card-grid{
+    margin-top: 30px;
     display: grid;
     column-gap: 10px;
     grid-template-columns: 50% 50%;
@@ -128,8 +215,6 @@ body, html {
     display: flex;
     justify-content: center;
 }
-
-@media
 
 
 
