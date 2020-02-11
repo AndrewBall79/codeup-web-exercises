@@ -124,37 +124,37 @@
      * Refactor your above function to use a switch-case statement
      */
 
-// function analyzeColor(colorReply) {
-//     var colorConfirm;
-//     switch (colorReply) {
-//         case "red":
-//             colorConfirm = "Red Is My Friends Hair Color Hahaha";
-//             break;
-//         case "orange":
-//             colorConfirm = "Orange Is A Color And A food";
-//             break;
-//         case "yellow":
-//             colorConfirm = "Dont Eat Yellow Snow";
-//             break;
-//         case "green":
-//             colorConfirm = "Green Is The Color Of Grass!";
-//             break;
-//         case "blue":
-//             colorConfirm = "Blue Is A Color And Not A food";
-//             break;
-//         case "indigo":
-//             colorConfirm = "Do Not Name Your Kids This";
-//             break;
-//         case "violet":
-//             colorConfirm = "I Think My Mom Likes This Color";
-//             break;
-//
-//     }
-//     return colorConfirm;
-// }
+function analyzeColor(colorReply) {
+    var colorConfirm;
+    switch (colorReply) {
+        case "red":
+            colorConfirm = "Red Is My Friends Hair Color Hahaha";
+            break;
+        case "orange":
+            colorConfirm = "Orange Is A Color And A food";
+            break;
+        case "yellow":
+            colorConfirm = "Dont Eat Yellow Snow";
+            break;
+        case "green":
+            colorConfirm = "Green Is The Color Of Grass!";
+            break;
+        case "blue":
+            colorConfirm = "Blue Is A Color And Not A food";
+            break;
+        case "indigo":
+            colorConfirm = "Do Not Name Your Kids This";
+            break;
+        case "violet":
+            colorConfirm = "I Think My Mom Likes This Color";
+            break;
 
-// alert(analyzeColor(randomColor));
-// console.log(randomColor);
+    }
+    return colorConfirm;
+}
+
+alert(analyzeColor(randomColor));
+console.log(randomColor);
 
 
     /**
