@@ -2,10 +2,10 @@
 
 // console.log("JavaScript");
 //
-// var i = 1;
-// while (i < 65536){
-//     console.log (i *= 2);
-// }
+var i = 1;
+while (i < 65536){
+    console.log (i *= 2);
+}
 
 // An ice cream seller can't go home until she sells all ' +
 // 'of her cones. Write a JS program that generates a random ' +
@@ -18,16 +18,14 @@
 
 var allCones = Math.floor(Math.random() * 50) + 50;
     console.log("starting with " + allCones + " cones");
-
 do {
     var sellingCones =Math.floor(Math.random() * 5) + 1;
     if (allCones < sellingCones){
-        console.log("Sorry I only have" + allCones + "left");
+        console.log("Sorry I only have" + allCones + " left");
     }
     else {
         allCones -= sellingCones;
         console.log(sellingCones + " cones sold!");
-
     }
 } while (allCones > 0);
         console.log("Sorry Man, I'm sold out!");
