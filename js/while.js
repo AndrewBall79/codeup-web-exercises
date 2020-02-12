@@ -16,21 +16,21 @@
 // 'cones sold to each person. This is how you get the random ' +
 // 'numbers.
 
-// var allCones = Math.floor(Math.random() * 50) + 50;
-//     console.log("starting with " + allCones + " cones");
-//
-// do {
-//     var sellingCones =Math.floor(Math.random() * 5) + 1;
-//     if (allCones < sellingCones){
-//         console.log("Sorry I only have" + allCones + "left");
-//     }
-//     else {
-//         allCones -= sellingCones;
-//         console.log(sellingCones + " cones sold!");
-//
-//     }
-// } while (allCones > 0);
-//         console.log("Sorry Man, I'm sold out!");
+var allCones = Math.floor(Math.random() * 50) + 50;
+    console.log("starting with " + allCones + " cones");
+
+do {
+    var sellingCones =Math.floor(Math.random() * 5) + 1;
+    if (allCones < sellingCones){
+        console.log("Sorry I only have" + allCones + "left");
+    }
+    else {
+        allCones -= sellingCones;
+        console.log(sellingCones + " cones sold!");
+
+    }
+} while (allCones > 0);
+        console.log("Sorry Man, I'm sold out!");
 
 
 

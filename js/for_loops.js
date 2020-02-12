@@ -1,8 +1,5 @@
 "use strict";
 
-
-
-// In the example above, you can see that a for loop takes 3 expressions separated by semicolons.
 //
 //     The first expression is called once before the first loop iteration starts and allows for initialization of loop variables.
 //
@@ -22,26 +19,29 @@
 // showMultiplicationTable(7);
 
 
+//
+// for (var i = 0; i < 10; i++) {
+//     var random = (Math.floor(Math.random() * 180) + 20);
+//     if (random % 2 === 0) console.log(random + " is even");
+//     else console.log(random + " is odd");
+// }
+//
 
-    //
-    // for (var i = 0; i < 10; i++) {
-    //     var random = (Math.floor(Math.random() * 180) + 20);
-    //     if (random % 2 === 0) console.log(random + " is even");
-    //     else console.log(random + " is odd");
-    // }
-    //
+///
+// for (var i = 1; i < 10; i++) {
+//     console.log (i.toString().repeat(i));
+// }
 
-
-    for (var i = 1; i < 9; i++) {
-            console.log(i.toString());
-        console.log(i.toString()+i);
-        console.log(i.toString()+i+i);
-    }
-
-
+//
 // function showSubtract(input) {
-//     for (var i = 100; i > 0; i -=5) {
-//         console.log(i );
+//     for (var i = 100; i > 0; i -= 5) {
+//         console.log(i);
 //     }
 // }
+//
 // showSubtract();
+//
+// for(var row =1; row <= 7; row++)
+//     triangle += '1' .repeat(row) + '\n';
+// console.log(triangle);
+
