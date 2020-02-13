@@ -13,30 +13,44 @@
      * Audience: "So David, how can I add an element to an array?"
      */
 
+
     // Consider the following array:
 
-    var cheeses = ["Brie", "Muenster", "Kraft American Singles", "Pepper Jack", "String", "Bleu de Gex"];
+    var cheeses = ["Brie", "Muenster", "Kraft American Singles", "Pepper Jack", "String", "Bleu de Gex", "Red Windsor"];
 
     // Quite the collection, if a bit incomplete. Where's cheddar?! Let's add cheddar to the end of our array.
 	// TODO Together: Add Cheddar to the end of the 'cheeses' array
 
+    cheeses.push("cheddar");
 
 	// TODO Together: Write a function to log each of the cheeses, using forEach
     
+cheeses.forEach(function(cheese) {
+console.log(cheeses);
+});
 
     // POP QUIZ: What the return of the function above?!
 
+    // logTheCheeses();
+
     // By using the push method I can add to the end of my array.
+
 
     // Well that's good and all, but let's also add Gouda to the front of the array.
 
+    cheeses.unshift("gouda", "ragstone");
+
+
     // The unshift method will allow me to add to the front of my array.
+
 
     /**
      * Audience: "But David, surely we are able to add more than one element at a time."
      */
 
     // Yes, you're right. I can pass more than one argument through these two methods.
+
+
 
 	// TODO: Pass more than one argument to these two methods
 
@@ -48,14 +62,21 @@
 
     // We have access to two methods that will allow us to remove elements as well.
 
+    cheeses.push("gouda");
+
+
     // You know, I haven't even tried Red Windsor. Let's remove it.
 
+
 	// TODO: Remove the Red Windsor from the array
+
+    cheeses.pop("Red Windsor");
 
     // Unlike unshift, shift will remove the first element of an array.
 
     // I never really like Havarti, let's axe that too.
 	// TODO: Remove the Havarti from the array
+
 
 
     // Pop will lop off the last element of an array.
@@ -65,6 +86,7 @@
 	// TODO: Remove the last element from the array, and store its value in a variable
 
 
+var someCheeses = cheeses.pop;
 
 
     // It's important to note that the return from the pop and shift methods is the item being removed from the array.
@@ -73,12 +95,13 @@
 	
 	// TODO: add the removed variable back to the end of the array
 
-
+var someCheeses = cheeses.slice(2,5);
+console.log(cheeses.slice(2,5));
     /**
      * Audience: "Golly David, there must be a way for me to locate an index of an element in an
      * array."
      */
-
+console.log(cheeses)
     // Remember how with strings we were able to find the index of a pattern of characters?
 
 	//TODO: find the index of the letter 'o' on the recently removed cheese
@@ -107,9 +130,9 @@
     // We can use this method in conjunction with the slice method.
 
         // The slice method will work alot like the substring method, in that it can return a value from either one or two arguments
+cheeses.sort();
 
 	// TODO: create a variable myFavCheeses, and assign it the slice of the cheeses array between Muenster and Kraft American Singles
-
 
     // By passing one argument, we start at the specified index and return an array to the end.
 	
@@ -123,7 +146,9 @@
     }
 	
 	// TODO: reverse the coy of the cheese array
-   
+
+
+
 	// TODO: using a forEach loop, log each of the cheeses in the reversed array
     
 

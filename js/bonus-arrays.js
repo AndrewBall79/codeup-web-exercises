@@ -5,7 +5,7 @@ var fruits = ["apple", "banana", "orange", "apple", "pineapple"];
 
 
 function allIndexesOf(inputA, inputB) {
-    console.log(inputA.indexOf(inputB), inputA[array.length - 1])
+    console.log(inputA.indexOf(inputB), inputA.lastIndexOf(inputB))
 }
 allIndexesOf(fruits, "apple");
 
@@ -15,3 +15,4 @@ allIndexesOf(fruits, "apple");
 
 // console.log(removeAll(fruits, "apple"));
 
+var bugs = ["mosquito", "ant", "scorpion", "ant", "ant", "mosquito", "typo", "reference error", "type error"];
