@@ -20,7 +20,7 @@ body, html {
     margin: .7em;
     padding: .25em;
 }
-.message-info {
+.bg-info {
     background-color: var(--info-bg);
     color: var(--text-info);
 }
@@ -36,3 +36,6 @@ body, html {
     background-color: var(--error-bg);
     color: var(--text-error);
 }
+
+
+
