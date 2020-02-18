@@ -7,8 +7,10 @@
     };
 
 
-    console.log("Hello From " + person.firstName +  " " + person.lastName);
-
+ //    console.log("Hello From " + person.firstName +  " " + person.lastName);
+ // person.saHello = function () {
+ //     return "Hello From " + this.firstName +  " " + this.lastName;
+ //    };
     /**
      * TODO:
      * Create an object with firstName and lastName properties that are strings
@@ -52,10 +54,10 @@
 
         shoppers.forEach(function (shopper){
             if (shopper.amount >= 200) {
-                console.log(shopper.name + " You have received a 12% discount! Your new total is " + (shopper.amount - (shopper.amount * .12)));
+                console.log(shopper.name + " You have received a 12% discount! Your new total is " + (shopper.amount - (shopper.amount * .12).toFixed(2)));
             }  else
                     {
-                        console.log("Sorry " + shopper.name + " you don't recieve a discount at this time");
+                        console.log("Sorry " + shopper.name + " you don't receive a discount at this time");
                     }
      });
 
@@ -112,8 +114,8 @@
             }
         },
     ];
-    books.forEach(function(book) {
-        console.log("Book #: " + books.[] + "Title: " + book.title + " --- " + "Author: " + book.author.firstName+ " " + book.author.lastName );
+    books.forEach(function(book,index) {
+        console.log("Book #: " + (index + 1) + "\nTitle: " + book.title + " --- " + "\nAuthor: " + book.author.firstName+ " " + book.author.lastName );
     });
 
 
@@ -142,6 +144,10 @@
      *      ---
      *      ...
      */
+
+
+
+
 
     /**
      * Bonus:
