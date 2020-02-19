@@ -72,14 +72,14 @@ function isTwo(random) {
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
 
+var billAmount = parseFloat(prompt("How Much Was Your Bill?"));
+var tipAmount = parseFloat(prompt("How Much Would You Like To Tip?"));
 function calculateTip(billAmount, tipAmount) {
     return tipAmount * billAmount;
 }
 // console.log(calculateTip(tipAmount, billAmount));
 
-// var billAmount = Number(prompt("How Much Was Your Bill?"));
-// var tipAmount = Number(prompt("How Much Would You Like To Tip?"));
-// alert("You Should Tip:" + calculateTip(tipAmount, billAmount))
+alert("You Should Tip:" + calculateTip(tipAmount, billAmount));
 
 /**
  * TODO:

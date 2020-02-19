@@ -52,3 +52,18 @@ for (var i = 1; i < 10; i++) {
         console.log(i);
     }
 
+
+
+
+    function fizzbuzz(input) {
+        if (input % 15 === 0) {
+            console.log("fizzbuzz");
+        } else if (input % 5 === 0) {
+            console.log("buzz")
+        } else if (input % 3 === 0) {
+            console.log("fizz")
+        } else {
+            console.log("You're number neither Fizzes, nor Buzzes")
+        }
+    }
+    fizzbuzz(30);

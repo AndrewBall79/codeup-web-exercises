@@ -6,18 +6,16 @@
         radius: 3,
 
         getArea: function () {
-            // TODO: complete this method
-            // hint: area = pi * radius^2
-
-            return (Math.pow(this.radius, 2) * Math.PI);
-            // TODO: return the proper value
+            return Math.pow(this.radius, 2) * Math.PI;
         },
         logInfo: function (doRounding) {
-            var area = (Math.round(this.getArea()));
+            var area;
             if (doRounding) {
+                area = Math.round(this.getArea());
             } else {
-                console.log("Area of a circle with radius: " + this.radius + ", is: ");
+                area = this.getArea();
             }
+                console.log("Area of a circle with radius: " + this.radius + ", is: " + area);
         }
     };
 
@@ -30,6 +28,21 @@
     console.log("=======================================================");
     // TODO: Change the radius of the circle to 5.
 
-    circle.radius = 5
+    circle.radius = 5;
+    console.log("Raw circle information");
+    circle.logInfo(false);
+    console.log("Circle information rounded to the nearest whole number");
+    circle.logInfo(true);
 
 })();
+
+
+
+function hasEvens(num) {
+    var evens = num.filter(n => n% 2 === 0);
+    return true
+}
+console.log(hasEvens([1, 2, 3]));
+console.log(hasEvens([2, 5, 6]));
+console.log(hasEvens([3, 3, 3]));
+console.log(hasEvens([]));
