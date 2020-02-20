@@ -39,9 +39,12 @@
 
 
 function hasEvens(num) {
-    var evens = num.filter(n => n% 2 === 0);
-    return true
-}
+
+    for (var i = 0; i < num.length; i++) {
+        return num[i] % 2 === 0;
+    }
+    }
+
 console.log(hasEvens([1, 2, 3]));
 console.log(hasEvens([2, 5, 6]));
 console.log(hasEvens([3, 3, 3]));
