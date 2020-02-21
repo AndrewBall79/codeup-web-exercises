@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/mapbox_maps_api.js"></script>
+    <title>First Mapbox Map</title>
+    <!-- Mapbox CSS -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.css' rel='stylesheet' />
+
+
+
+    <!-- Custom CSS -->
+    <style>
+        #map {
+            /* the width and height may be set to any size */
+            width: 100%;
+            height: 700px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>My Mapbox Map!</h1>
+
+<!-- The HTML element that serves as the Mapbox container -->
+<div id='map'></div>
+
+<!-- Mapbox JS -->
+<script src="https://api.mapbox.com/geocoding/v5/mapbox.places/Los%20Angeles.json?access_token=pk.eyJ1IjoiYW5kcmV3YmFsbDE5NzkiLCJhIjoiY2s2dHRzenVkMDJ2MDNtbXRwdTlhaGlydyJ9.rCip9yjihsIVoxSSb1WS4g
+"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.js'></script>
+<script src="js/keys.js"></script>
+
+<!-- Custom JS -->
+<script src="js/mapbox-geocoder-utils.js"></script>
+<script src="js/mapbox_maps_api.js"></script>
+</body>
+</html>
