@@ -145,7 +145,7 @@ function goldReindeer(arr) {
         return bucket
     }
 
-    console.log(goldReindeer(reindeerList));
+    // console.log(goldReindeer(reindeerList));
 
 
     function getGOld(reindeerArray) {
@@ -158,7 +158,22 @@ function goldReindeer(arr) {
         return bucket;
     }
 
-    getGOld(reindeerList);
+    // console.log(getGOld(reindeerList));
+
+
+    // Write a function that returns a message that says hello to someone by accessing the name property of a passed object. If the passed
+    // argument's name property is anything but a string, or the argument is not an object, return "Hello, my dudes!"
+
+function sayHellos(input) {
+        if (typeof input !== "object" && typeof input.name === "string") {
+            console.log("Hello " + input);
+        }else{
+            console.log( "Hello, My Dudes");
+        }
+}
+sayHellos(reindeerList)
+
+
 
 </script>
 

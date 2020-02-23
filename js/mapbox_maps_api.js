@@ -92,11 +92,12 @@ var restaurants = [
         popupHTML: "<p>'Zzza Brah</p>"
     }
 ];
-restaurants.forEach(function(restaurant) {
-        geocode(search:restaurant.address, mapboxToken).then(function () {
-        console.log();
-        map.setZoom(5);
-    })
-    });
+// restaurants.forEach(function(restaurant) {
+        // geocode(search:restaurant.address, mapboxToken).then(function ()
+    // {
+        // console.log();
+        // map.setZoom(5);
+    // })
+    // });
 
 
