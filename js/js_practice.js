@@ -96,15 +96,36 @@
 
 function filterNumbers(array){
     var bucket = [];
-    var arraySort = array.sort((a, b) => a - b);
-    arraySort.forEach(function(number) {
+    array.forEach(function(number) {
         if (!isNaN(parseFloat(number))){
-            bucket.push(number)
+            bucket.push(number);
         }
     });
-    return bucket;
+    return bucket.sort((a, b) => a - b);
 }
-console.log(filterNumbers(["tspeed", false, 9, 10, 7, 40, 5, 3]));
+
+
+// function filterNumbers(array) {
+//     var bucket = [];
+//     array.forEach(function (item) {
+//         if (typeof item === "number") {
+//             bucket.push(item);
+//         }
+//     });
+//         return bucket.sort((a, b) => a - b)
+// }
+
+// console.log(filterNumbers(["tspeed", false, 9, 10, 7, 40, 5, 3]));
+// console.log(filterNumbers(["fred", true, 5, 3]));
+// console.log(filterNumbers([100, 1000000, false, "red", true, 50, 500000, 3]));
+
+//Write a function
+//We need a bucket
+//We need to loop to check each individual item
+//We Need to check each item for number
+//If it is a number push it in the bucket.
+//If it needs to be sorted .sort((a, b) => a - b)
+
 
 
 // function filterNumbers(array) {
@@ -115,7 +136,9 @@ console.log(filterNumbers(["tspeed", false, 9, 10, 7, 40, 5, 3]));
 
 
 // 2. Write a function, `getOlder()` that takes in array of dog objects and increases the value of the age properties by 1.
-
+//write a doggy function
+//since its an array we loop --> loop through each dog --> dog.age +=1
+//return dawgsssss!
 
 var dogs =  [
     {
@@ -138,10 +161,18 @@ function getOlder(arr) {
     arr.forEach(function (dog) {
         return(dog.age += 1);
     });
-    console.log(dogs);
+    return dogs;
 }
-getOlder(dogs);
+
+console.log(getOlder(dogs));
+
+
 // 3. Write a function, `washCars()` that takes in a array of car objects and sets the boolean properties of isDirty to false
+
+
+//write function
+// for each loop through cars --> car.isDirty = false
+//return
 
 var cars = [
     {
@@ -167,12 +198,21 @@ function washCars(arr) {
     arr.forEach(function (car) {
         return (car.isDirty = false)
     });
-    console.log(cars)
+    return cars;
 }
-washCars(cars);
+
+console.log(washCars(cars));
+
+
 // 4. Write a function, `adminList()` that takes in an array of user objects and returns a count of all admins based on the isAdmin property. Refactor to return an array of admin-only user emails. Refactor again to return an array of user objects that are admins.
 //     ```js
-     //Example Input: 
+// Example Input:
+//write a function adminList(users)
+//var adminCount = 0;
+//forEach user --> user.isAdmin --> adminCount += 1;
+//return AdminCount
+
+
 var users = [
        {
          isAdmin: true,
@@ -188,6 +228,46 @@ var users = [
        }
      ];
 
+function adminList(arr) {
+    var adminCount = 0;
+    arr.forEach(function (user ) {
+        if (user.isAdmin === true) {
+            adminCount += 1
+        }
+    });
+    return adminCount;
+}
+
+// console.log(adminList(users));
+
+
+
+function adminList(arr) {
+    var adminCount = 0;
+    arr.forEach(function (user ) {
+        if (user.isAdmin === true) {
+            adminCount += 1
+        }
+    });
+    return adminCount;
+}
+
+// console.log(adminList(users));
+
+
+
+// function adminList(arr) {
+//     var bucket = [];
+//     arr.forEach(function (user ) {
+//         if (user.isAdmin === true) {
+//             bucket.push(user.email)
+//         }
+//     });
+//     return bucket
+// }
+//  console.log(adminList(users));
+
+
 // function adminList(arr) {
 //     var bucket = [];
 //     arr.forEach(function (user ) {
@@ -195,63 +275,69 @@ var users = [
 //             bucket.push(user)
 //         }
 //     });
-//     console.log(bucket)
+//     return bucket
 // }
-// adminList(users);
-function adminList(arr) {
-    var bucket = [];
-    arr.forEach(function (user ) {
-        if (user.isAdmin === true) {
-            bucket.push(user.email)
-        }
-    });
-    console.log(bucket)
-}
-adminList(users);
+// console.log(adminList(users));
 
 
 // 5. Create a function, `makeSandwichObjects()` that takes in two array of strings, breads and fillings and returns an array of sandwichObjects that contain properties for bread and filling and values correspond to the same order of the two passed in arrays. Assume the two array inputs are the same length.
 
-    //   Example Input:
+// Example Input:
+// write a function makeSandwichObjects(breads, fillings)
+// var bucket = [];
+// we have to loop --> for(var i = 0; i < breads.length; i++)
+// create sandwich objects
+// bucket.push(sandwichObject)
+// return bucket
 
 
-
-     var breads = [
+     var breadList = [
        "white",
        "wheat",
        "rhy",
        "white"
      ];
      
-     var fillings = [
+     var fillingList = [
        "pb&j",
        "ham",
        "cheese steak",
        "tuna"
      ];
-     function makeSandwichObjects(input1, input2) {
 
-     }
 
-     makeSandwichObjects(breads, fillings);
+function makeSandwichObjects(breads, fillings) {
+    var bucket = [];
+    for (var i = 0; i < breads.length; i++){
+        var sandwichObject = {
+            bread: breads[i],
+            filling: fillings[i]
+        };
+        bucket.push(sandwichObject)
+    }
+    return bucket;
+}
 
-    // // Example Output:
-    //   [
-    //    {
-    //      bread: "white",
-    //      filling: "pb&j"
-    //    },
-    //    {
-    //      bread: "wheat",
-    //      filling: "ham"
-    //    },
-    //    {
-    //      bread: "rhy",
-    //      filling: "cheese steak"
-    //    },
-    //    {
-    //      bread: "white",
-    //      filling: "tuna"
-    //    }
-    //  ]
+console.log(makeSandwichObjects(breadList, fillingList));
+
+
+
+// TODO Write a function named keepYellow that accepts an array of strings and returns an array with all the strings that are equal to "yellow"
+
+//write a function named keepYellow
+//var bucket = []
+//loop through the array. for ---> is yellow? --> in bucket[]
+//return bucket
+
+function keepYellow(array) {
+    var bucket = [];
+    for (var i = 0; i < array.length; i ++) {
+        if (array[i] === "yellow") {
+            bucket.push(array[i])
+        }
+    }
+    return bucket
+}
+
+// console.log(keepYellow(["yellow", "red", "blue", "yellow", "black", "brown", "yellow"]));
 
