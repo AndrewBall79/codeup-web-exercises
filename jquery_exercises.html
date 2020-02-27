@@ -26,7 +26,7 @@
     <li>Enjoy The Benefits Of Completed List</li>
 
 </ul>
-<p class="important codeup">This is also very important.</p>
+<p class="important codeup">This is also very important...</p>
 <script src="js/jquery-2.2.4.js"></script>
 <script>
     "use strict";
@@ -36,12 +36,30 @@
 
     // var contents = $('#how').html();
     // alert(contents);
-    $('*').css({'border': '1px solid #F00', 'width': '75%', 'font-family': 'helvetica', 'border-radius': '4px', 'padding': '6px', 'box-shadow': '2px 2px 5px grey'});
+    $('*').css({'border': '1px solid #F00', 'width': '75%', 'font-family': 'helvetica', 'border-radius': '4px', 'padding': '6px', 'box-shadow': '2px 2px 5px grey', 'background': 'ghostwhite'});
     $('.underestimate').css({'color': 'white', 'background-color': 'grey' });
     $('.important').css({'background-color': 'darkgrey', 'font-size': '25px', 'font-family': 'century'});
     $('.codeup').css('border', '4px solid red');
     $('.inferno').css({'background': 'red', 'color': 'white', 'font-size': '20px',});
     $('.competent').css({'width': '150%', 'background': 'goldenrod'});
+    $('h1').click(function() {
+        $(this).css('background-color', 'blue');
+    });
+    $('p').dblclick(function() {
+        $('p').css({'font-size': '18px', 'color': 'ghostwhite'});
+    });
+    $('li').hover(
+        function() {
+        $(this).css('color', 'red');
+    },
+        function() {
+            $(this).css('color', 'black');
+        }
+    );
+
+    $('h1').on('click', 'span', function () {
+        $(this).css('background', '#ef0');
+    });
 
 
 </script>
