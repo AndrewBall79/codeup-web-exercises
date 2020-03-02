@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+
+    <title>jQuery Listicles</title>
+
+    <style>
+
+        .invisible{
+            /*visibility: hidden;*/
+            color: white;
+        }
+        .visible{
+            color: black;
+        }
+        .frame{
+            height: 220px;
+            display: flex;
+            border: 4px saddlebrown solid;
+
+        }
+        .frames{
+            height: 200px;
+            width: 175px;
+            border: 4px saddlebrown solid;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<dl class="visible" id="invisible">
+    <dd class="invisible">1. Neutron stars can spin at a rate of 600 rotations per second</dd>
+    <dd class="invisible">2. Space is completely silent</dd>
+    <dd class="invisible">3. There is an uncountable number of stars in the known universe</dd>
+    <dd class="invisible">4. The Apollo astronauts' footprints on the moon will probably stay there for at least 100 million years</dd>
+    <dd class="invisible">5. 99 percent of our solar system's mass is the sun</dd>
+    <dd class="invisible">6. More energy from the sun hits Earth every hour than the planet uses in a year</dd>
+    <dd class="invisible">7. If two pieces of the same type of metal touch in space, they will bond and be permanently stuck together</dd>
+    <dd class="invisible">8. The largest asteroid in our solar system is a mammoth piece of space rock named Ceres</dd>
+    <dd class="invisible">9. One day on Venus is longer than one year on Earth</dd>
+    <dd class="invisible">10. One of Saturn's moons has a distinct two-tone coloration</dd>
+</dl>
+
+
+<h3>The Sun</h3>
+<ul class="planets">
+<li>The Sun accounts for 99.86% of the mass in the solar system.</li>
+<li>Over one million Earth's could fit inside the Sun</li>
+<li>The Sun is almost a perfect sphere.</li>
+<li>The Sun is travelling at 220 km per second.</li>
+</ul>
+
+<h3>The Planet Earth</h3>
+<ul class="planets">
+<li>The Earth's rotation is gradually slowing.</li>
+<li>Earth is the only planet not named after a god.</li>
+<li>The Earth is the densest planet in the Solar System.</li>
+<li>Earth has a powerful magnetic field.</li>
+</ul>
+
+<h3>The Planet Jupiter</h3>
+<ul class="planets">
+<li>Jupiter is the fourth brightest object in the solar system.
+</li>
+<li>The ancient Babylonians were the first to record their sightings of Jupiter.
+</li>
+<li>Jupiter orbits the Sun once every 11.8 Earth years.</li>
+<li>Jupiter has the shortest day of all the planets.</li>
+</ul>
+<button id="button-list">clicka</button>
+<div class="frame">
+<div class="frames"></div>
+<div class="frames"></div>
+<div class="frames"></div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+"use strict";
+
+$('#button-list').click(function () {
+    $('li:last-child').css('background-color', 'yellow');
+});
+
+$('h3').click(function () {
+    $('li').css('font-weight', 'bold')
+});
+
+$('li').click(function () {
+    $('li:first-child').css('color', 'blue')
+});
+
+
+$(document).ready(function() {
+$('dd').click(function(event) {
+$(this).toggleClass('visible');
+});
+});
+
+$('.invisible').hover(
+    function() {
+        $(this).css('background-color', 'blue');
+    },
+    function() {
+        $(this).css('background-color', '#FFF');
+    }
+);
+
+$(document).ready(function() {
+    $('h3').click(function(event) {
+        event.preventDefault();
+        $('.planets').addClass('highlighted');
+    });
+});
+
+</script>
+</body>
+
+
+
+
+
+</html>

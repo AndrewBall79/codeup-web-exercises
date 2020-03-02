@@ -57,13 +57,14 @@ for (var i = 1; i < 10; i++) {
 
     function fizzbuzz(input) {
         if (input % 15 === 0) {
-            console.log("fizzbuzz");
+   return ("fizzbuzz");
         } else if (input % 5 === 0) {
-            console.log("buzz")
+            return ("buzz")
         } else if (input % 3 === 0) {
-            console.log("fizz")
+            return ("fizz")
         } else {
-            console.log("You're number neither Fizzes, nor Buzzes")
+            return ("You're number neither Fizzes, nor Buzzes")
         }
     }
-    fizzbuzz(30);
+
+console.log(fizzbuzz(30));
