@@ -1,0 +1,35 @@
+[
+    {
+        "title": "My First Blog Post",
+        "content": "It's the worst time of year to catch Corona Virus. Not to say there's a particularly good time of year to catch the corona virus, but right now with all the pollen and the seasons changing and whatnot.I mean really, did you just sneeze and then immediately touch that baby? Good god, what's wrong with you. Now I have to go dip myself in a bath of industrial strength bleach. ",
+        "images": "images/sneeze.jpeg",
+        "categories": [
+            "sick",
+            "sneeze"
+        ],
+        "date": "March, 2020"
+    }, {
+        "title": "The Second Post",
+        "content": "Caked chocolates, sweet iced creams, the Claws of a Bear. Jujubes with marzipan toffee apple pie flavored marshmallows. Choco-gingerbread with liquorice scented chocolate bar and toasted jujubes. Sweet jelly donut fulled chocolate cake with candied carrot cake cotton candy. Sweet biscuit rolls with gummy topping, sesame snaps and a tootsie roll sugar plum pie. Sweet mini croissant filled chocolate cake coated chupa chups. Donut croissant scented gummies with donut powdered ice cream.",
+    "images": "images/candy.jpeg",
+
+    "categories": [
+            "family",
+            "candy",
+            "sweets",
+            "sugar"
+        ],
+        "date": "February 14, 2015"
+    }, {
+    "title": "The Third Post",
+    "content": "Building a raft out of your moms trash. 'Why whould I want to do that?' you may find yourself asking, well the answer is simple. I've seen your moms trash, it's the best. All those milk bottles and whatnot, jeeze. What else are you going to do with it? It's all going back to the ocean anyways, so why not do something awesome with it, send it out into the deep blue sea with style! Anyways, I think maybe it's time to talk about your families reliance on diary..." ,
+    "images": "images/trashraft.jpeg",
+    "categories": [
+        "family",
+        "dairy",
+        "diy",
+        "rafts"
+    ],
+    "date": "March, 04, 2020"
+}
+]

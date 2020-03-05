@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .weatherBox {
+            width: 20%;
+            height: 310px;
+        }
+
+        .icon {
+            background-color: #0fb784;
+            font-family: Helvetica, sans-serif;
+        }
+        .date {
+            background-color: lime;
+            font-size: 20px;
+            font-family: "Helvetica Neue", sans-serif;
+            padding: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .summary {
+            background-color: limegreen;
+            font-size: 20px;
+            font-family: Beirut, sans-serif;
+            padding: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .temp {
+            background-color: darkolivegreen;
+            font-family: "Heiti TC", sans-serif;
+            font-size: 25px;
+            padding: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="weatherBox">
+    <div id="weatherDay1"></div>
+</div>
+<div class="weatherBox">
+    <div id="weatherDay2"></div>
+</div>
+<div class="weatherBox">
+    <div id="weatherDay3"></div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<input type="text">
+
+
+<script src="js/keys.js"></script>
+<script>
+
+    $.get("https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/"+darkSkyKey+"/37.8267,-122.4233")
+        .done(function (data) {
+            {
+                $('#weatherDay1').append(
+                    '<div class="icon"><img src="svg/' + data.currently.icon + '.svg"' + '</div>' +
+                    '<div class="temp">CURRENTLY: <br>' + data.currently.temperature + '</div>' +
+                    '<div class="date">' + (Date(data.currently.time * 1000)) + '</div>' +
+                    '<div class="summary">' + data.currently.summary + '</div>' +
+                    '<div class="hiLo">' + data.daily.data[0].temperatureHigh +'/'+ data.daily.data[0].temperatureLow);
+                $('#weatherDay2').append(
+                    '<div class="icon"><img src="svg/' + data.hourly.icon + '.svg"' + '</div>' +
+                    '<div class="date">' + (Date(data.time * 1000)) + '</div>' +
+                    '<div class="summary">' + data.hourly.summary + '</div>' +
+                    '<div class="hiLo">' + data.daily.data[1].temperatureHigh +'/'+ data.daily.data[2].temperatureLow);
+                $('#weatherDay3').append(
+                    '<div class="icon"><img src="svg/' + data.daily.icon + '.svg"' + '</div>' +
+                    '<div class="date">' + (Date(data.daily.data[7].time * 1000)) + '</div>' +
+                    '<div class="summary">' + data.daily.summary + '</div>' +
+                    '<div class="hiLo">' +data.daily.data[7].temperatureHigh +'/'+ data.daily.data[7].temperatureLow);
+            }
+            console.log(data)
+        });
+
+
+</script>
+</body>
+
+</html>

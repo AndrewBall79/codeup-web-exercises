@@ -30,5 +30,23 @@
             "tool"
         ],
         "price": 10
-    }
+    },
+    {
+        "title": "SureGrip",
+        "quantity": 5,
+        "categories": [
+            "tool",
+            "machine",
+            "indoor"
+        ],
+        "price": 20000
+    }, {
+    "title": "Handless Vac",
+    "quantity": 1,
+    "categories": [
+        "tool"
+    ],
+    "price": 10
+}
+
 ]

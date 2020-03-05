@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--//first create inputs for food and a button to send the user input-->
+<div class="container">
+<form action="POST">
+<input type="text" name="data" id="text"><button id="sendFood" type="button" onclick="getData()">Add To List</button>
+</form>
+<h3>Favorite Food:</h3>
+<br>
+<ul id="menu">
+    <li>Ramen</li>
+    <li>Sushi</li>
+    <li>Curry</li>
+</ul>
+<br>
+<h3 class="color">Change Me</h3>
+<br>
+<h3>My Cohort:<span id="myCohort"></span> </h3>
+<input type="text" name="data" id="cohort"><button id="sendCohort" type="button" onclick="getData()">Update</button>
+<br>
+<button id="yellow">Highlight</button>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+
+    //this is the menu adding feature
+    $(document).ready(function(){
+        $('#sendFood').click(function() {
+            var mylist = $('#text').val();
+            $('#menu').append('<li>'+mylist+'</li>');
+            return false;
+        });
+    });
+
+    //this is the color background changing feature
+    $(".color").dblclick(function () {
+            $(".color").css("background","purple")
+    });
+
+    //add function to put cohort name after 'my cohort' upon clicking
+    $(document).ready(function(){
+        $('#sendCohort').click(function() {
+            var mylist = $('#cohort').val();
+            $('#myCohort').append('<span> '+mylist+'</span>');
+            return false;
+        });
+    });
+
+    $('#yellow').click(function () {
+        $('#myCohort').css('background', 'yellow')
+    });
+
+    // $('.container').hide().css('background','white');
+    // $('.container').css('background', 'pink').delay(3000);
+
+    setTimeout(function () {
+        $(".container").css("backgroundColor", "pink");
+    }, 3000);
+</script>
+
+</body>
+</html>

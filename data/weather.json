@@ -1,0 +1,33 @@
+latitude: 37.8267
+longitude: -122.4233
+timezone: "America/Los_Angeles"
+currently:
+time: 1583356050
+summary: "Clear"
+icon: "clear-day"
+nearestStormDistance: 1
+nearestStormBearing: 179
+precipIntensity: 0
+precipProbability: 0
+temperature: 65.86
+apparentTemperature: 65.86
+dewPoint: 45.92
+humidity: 0.49
+pressure: 1017.9
+windSpeed: 3.93
+windGust: 6.46
+windBearing: 326
+cloudCover: 0.04
+uvIndex: 5
+visibility: 10
+ozone: 332.1
+__proto__: Object
+minutely:
+summary: "Clear for the hour."
+icon: "clear-day"
+hourly:
+summary: "Partly cloudy throughout the day."
+icon: "partly-cloudy-day"
+daily:
+summary: "Possible light rain on Saturday and Tuesday."
+icon: "rain"
