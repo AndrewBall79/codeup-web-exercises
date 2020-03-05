@@ -96,7 +96,7 @@ marker.setPopup(alamoPopup);
 
 // TODO TOGETHER: Using the Geocoder helper function, log the coordinates of Codeup and recenter the map to focus on Codeup. Comment out previous map code.
 
-    geocode(search:"600 Navarro St, San Antonio, TX, 78205", mapboxToken).then(function (result) {
+    geocode(search,"600 Navarro St, San Antonio, TX, 78205", mapboxToken).then(function (result) {
     console.log(result);
     map.setCenter(result);
     map.setZoom(5);
