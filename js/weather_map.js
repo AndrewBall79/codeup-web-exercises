@@ -1,12 +1,7 @@
 "use strict";
 
 
-//
-// $('#locaBtn').click(function () {
-//     var userInput = $('#location').val();
-//
-// console.log(userInput);
-// });
+
 mapboxgl.accessToken = mapboxToken;
 
 var map = new mapboxgl.Map({
@@ -17,26 +12,26 @@ var map = new mapboxgl.Map({
 });
 
 
-
-
 //MARKER DRAG FUNCTION
-
 
 var marker = new mapboxgl.Marker({
     draggable: true
 })
     .setLngLat([-98.4936, 29.4241])
     .addTo(map);
+
 function onDragEnd() {
     var lngLat = marker.getLngLat();
     coordinates.style.display = 'block';
-    var longitudeinal = lngLat.lng +',' + lngLat.lat;
-    lngLat = lngLat.lat.toFixed(3) +',' + lngLat.lng.toFixed(3);
-console.log(lngLat);
-$.get("https://api.mapbox.com/geocoding/v5/mapbox.places/"+ longitudeinal +".json?access_token=" + mapboxgl.accessToken).done(function (e){
-    console.log(e.features[0].place_name);
-    $("#locationBanner").html(e.features[0].place_name);
-});
+    var longitudeinal = lngLat.lng + ',' + lngLat.lat;
+    lngLat = lngLat.lat.toFixed(3) + ',' + lngLat.lng.toFixed(3);
+    console.log(lngLat);
+
+    $.get("https://api.mapbox.com/geocoding/v5/mapbox.places/" + longitudeinal + ".json?access_token=" + mapboxgl.accessToken).done(function (e) {
+        console.log(e.features[0].place_name);
+        $("#locationBanner").html(e.features[0].place_name);
+    });
+
     $.get("https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/" + darkSkyKey + "/" + lngLat)
         .done(function (data) {
             {
@@ -59,10 +54,8 @@ $.get("https://api.mapbox.com/geocoding/v5/mapbox.places/"+ longitudeinal +".jso
             }
         });
 }
+
 marker.on('dragend', onDragEnd);
-
-
-
 
 
 //LAT LONG FUNCTION
@@ -71,7 +64,7 @@ $('#clickme').click(function () {
     var lngLat = $('#long').val() + ", " + $('#lat').val();
     var longitudeinal = $('#lat').val() + ", " + $('#long').val();
 
-    $.get("https://api.mapbox.com/geocoding/v5/mapbox.places/"+ longitudeinal +".json?access_token=" + mapboxgl.accessToken).done(function (e){
+    $.get("https://api.mapbox.com/geocoding/v5/mapbox.places/" + longitudeinal + ".json?access_token=" + mapboxgl.accessToken).done(function (e) {
         console.log(e.features[0].place_name);
         $("#locationBanner").html(e.features[0].place_name);
     });
@@ -99,14 +92,14 @@ $('#clickme').click(function () {
                 console.log(Date(data.currently.time * 1000))
             }
 
-    $('.fly').click(function () {
-        map.flyTo({
-            center: [data.longitude, data.latitude],
-            essential: true
-        });
-    });
+            $('.fly').click(function () {
+                map.flyTo({
+                    center: [data.longitude, data.latitude],
+                    essential: true
+                });
+            });
 
-});
+        });
 });
 
 
@@ -121,7 +114,7 @@ var geocoder =
     });
 map.addControl(geocoder);
 
-geocoder.on('result', function(e) {
+geocoder.on('result', function (e) {
     console.log(e);
     $("#locationBanner").html(e.result.place_name);
     var lngLat = (e.result.center[1]) + ", " + (e.result.center[0]);
