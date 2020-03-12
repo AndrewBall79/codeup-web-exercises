@@ -66,53 +66,53 @@
 //     })
 // };
 
+
 //Create a function that accepts a GitHub username, and returns a promise that resolves with the date of the last commit that user made
 //To find the most recent commit, find the most recent public push event payload and use the first commit in the payload to find it's date.
-//
+
 
 fetch('https://api.github.com/users/AndrewBall79', {headers: {'Authorization': 'token b48c101eb866a02cdef2f9763282b3e9564e3578'}})
     .then((response) => {
         return response.json()
-            .then((users) => {
-                var i = users.updated_at;
-                console.log(i);
-            });
+    })
+    .then((users) => {
+        var i = users.updated_at;
+        console.log(i);
     });
 
 
-// =================== Fetch Bonuses
-//
 // -- Ex. 1
-//
+
 // In your data directory, create a profiles.json file with the following...
-//
+
 // {
 //     "sandy123": "brown",
 //     "bob234": "green",
 //     "sally345": "blue"
 // }
-//
+
 // Add an input field and submit button (you will need to prevent the default behaviour if inside a form element) that when clicked, runs the following function...
 // Create a function that takes in a username and fetch's the color preference based on the username and sets the background color to that color.
-//
 
 
 // -- Ex. 2
-//
+
+
 // Using the Star Wars API, log the first film a given Star Wars character's homeworld appeared in
-//
-//
-//
+
+
 // -- Ex. 3
-//
+
+
 // Using the GitHub API and reduce(), find the average hour of the last 3 pushes. Ignore minutes.
-//
-//
-//
+
+
 // -- Ex. 4
-//
+
+
 // Create star-chars.json file in your data folder and paste in the following...
-//
+
+
 // [
 //     {
 //         "name": "Rey",
@@ -127,8 +127,10 @@ fetch('https://api.github.com/users/AndrewBall79', {headers: {'Authorization': '
 //         "coolness": 10
 //     }
 // ]
-//
+
+
 // Create a function that fetches this array and returns an array of homeworlds for the characters.
 //     It will look something like the following...
-//
+
+
 // ['Jakku', 'Tatooine', 'Tatooine']
