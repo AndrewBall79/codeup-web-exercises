@@ -1,33 +1,33 @@
 'use strict';
-// once the promise is resolved or rejected, take additional action
-let goodKid = false;
-
-const getCake = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        if (goodKid) {
-            resolve("CAAAAAAKE!!");
-        } else {
-            reject("NO CAAAAKE!!! :((((");
-        }
-    }, 2000);
-});
-
-
-// once the promise is resolved or rejected, take additional action
-
-getCake.then((data) => {
-    console.log(data);
-});
-
-getCake.catch((error) => {
-    console.log(error);
-    console.log(error);
-}).then(() => {
-    console.log("Additional then");
-    return Promise.reject();
-}).catch(() => {
-    console.log("Final catch");
-});
+// // once the promise is resolved or rejected, take additional action
+// let goodKid = false;
+//
+// const getCake = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         if (goodKid) {
+//             resolve("CAAAAAAKE!!");
+//         } else {
+//             reject("NO CAAAAKE!!! :((((");
+//         }
+//     }, 2000);
+// });
+//
+//
+// // once the promise is resolved or rejected, take additional action
+//
+// getCake.then((data) => {
+//     console.log(data);
+// });
+//
+// getCake.catch((error) => {
+//     console.log(error);
+//     console.log(error);
+// }).then(() => {
+//     console.log("Additional then");
+//     return Promise.reject();
+// }).catch(() => {
+//     console.log("Final catch");
+// });
 
 
 // ============ Using Promises with jQuery version 3+
@@ -88,7 +88,7 @@ const singPromises = () => {
         .then(() => singLyrics(' bush', 1))
         .then(() => singLyrics(' the monkey', .5))
         .then(() => singLyrics(' chased', 1))
-        .then(() => singLyrics(' the wea-', 1.5))
+        .then(() => singLyrics(' the wee-', 1.5))
         .then(() => singLyrics(' sel', 1));
 };
 

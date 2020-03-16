@@ -71,14 +71,15 @@
 //To find the most recent commit, find the most recent public push event payload and use the first commit in the payload to find it's date.
 
 
-fetch('https://api.github.com/users/AndrewBall79', {headers: {'Authorization': 'token b48c101eb866a02cdef2f9763282b3e9564e3578'}})
+fetch('https://api.github.com/users/AndrewBall79/events', {headers: {'Authorization': 'token b48c101eb866a02cdef2f9763282b3e9564e3578'}})
     .then((response) => {
         return response.json()
     })
     .then((users) => {
-        var i = users.updated_at;
+        var i = users[0].created_at;
         console.log(i);
     });
+
 
 
 // -- Ex. 1
@@ -134,3 +135,27 @@ fetch('https://api.github.com/users/AndrewBall79', {headers: {'Authorization': '
 
 
 // ['Jakku', 'Tatooine', 'Tatooine']
+
+function singLyrics(lyrics, pitch) {
+    return new Promise((res) => {
+        var lyric = new SpeechSynthesisUtterance(lyrics);
+        lyric.pitch = pitch;
+        lyric.rate = .7;
+        speechSynthesis.speak(lyric);
+        song.append(lyrics);
+        setTimeout(res, 1500);
+    });
+}
+
+const singPromises = () => {
+    return singLyrics('All a-', .5)
+        .then(() => singLyrics('round the', 1))
+        .then(() => singLyrics(' mulberry', 1.5))
+        .then(() => singLyrics(' bush', 1))
+        .then(() => singLyrics(' the monkey', .5))
+        .then(() => singLyrics(' chased', 1))
+        .then(() => singLyrics(' the wee-', 1.5))
+        .then(() => singLyrics(' sel', 1));
+};
+
+document.getElementById('sing-btn').addEventListener('click', singPromises);
