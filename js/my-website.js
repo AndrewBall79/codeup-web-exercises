@@ -1,8 +1,10 @@
-"use strict";
 
-
-$(".subheader").click(function () {
+$(".subheader").click(function() {
     $(this).html('To Code');
 });
 
-$(".subheader").css('background', 'green');
+$(".display-4").click(function(){
+    $(this).css('color', 'blue');
+
+});
+
