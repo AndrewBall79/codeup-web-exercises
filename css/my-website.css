@@ -1,28 +1,39 @@
 body{
     height: 100%;
-    background: linear-gradient(rgba(100, 100, 137, .5), rgba(100,100,137, 1));
+    background: black;
+    /*background: linear-gradient(rgba(100, 100, 137, .5), rgba(100,100,137, 1));*/
+    margin: 0;
 }
 #main-jumbotron {
     /*background-image: url("../images/my-website/WatercolorSkull.jpg");*/
-    background: center;
-    background: linear-gradient(#3B94D9,rgba(100, 100, 137, .7));
+    /*background: center;*/
+    /*background: linear-gradient(#3B94D9,rgba(100, 100, 137, .7));*/
     height: 34vh;
     display: flex;
-
+    width: 100%;
+}
+#main-jumbotron1 {
+    height: 38vh;
+    display: flex;
 }
 
 #jumbotron-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
 }
 
-.embed-responsive .card-img-top {
-    object-fit: cover;
-}
+/*.embed-responsive .card-img-top {*/
+/*    object-fit: cover;*/
+/*}*/
 
 .top-name{
-font-family: 'Notable', sans-serif;
+    font-family: 'Notable', sans-serif;
     display: flex;
     color: silver;
     justify-content: center;
+    align-items: center;
     text-shadow: black 2px 2px 5px;
 }
 
@@ -35,35 +46,31 @@ font-family: 'Notable', sans-serif;
     text-shadow: black 2px 2px 5px;
 }
 .forefront-element{
-    font-family: 'Expletus Sans', cursive;
+    /*font-family: 'Expletus Sans', cursive;*/
+    font-family: "Heiti SC", sans-serif;
     box-shadow: 2px 2px 5px black;
     display: flex;
     justify-content: center;
     align-items: center;
     text-shadow: black 2px 2px 5px;
-    background: linear-gradient(rgba(100, 100, 137, .5),rgba(100, 100, 137, 1));
-    color: silver;
+    /*background: linear-gradient(rgba(100, 100, 137, .5),rgba(100, 100, 137, 1));*/
+    background: rgba(100,100,100,.3);
+    color: ghostwhite;
     width: 100%;
-    border: silver 2px solid;
     margin-bottom: 10px;
     border-radius: 4px;
     height: 40px;
 }
 .lead {
+    text-transform: uppercase;
     display: flex;
-    font-family: 'Expletus Sans', cursive;
+    /*font-family: 'Expletus Sans', cursive;*/
+    font-family: "Heiti SC", sans-serif;
     color: silver;
     justify-content: center;
     text-shadow: black 2px 2px 5px;
 }
 
-.lead2 {
-    display: flex;
-    font-family: 'Expletus Sans', cursive;
-    color: silver;
-    justify-content: center;
-    text-shadow: black 2px 2px 5px;
-}
 
 .sm-banner{
     background: linear-gradient(#3B94D9,rgba(100, 100, 100, .7));
@@ -79,8 +86,8 @@ p {
 
 .prismGrid{
     max-width: 600px;
-
     display: grid;
+    height: 38vh;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 60% 60%;
     grid-template-areas:
@@ -101,11 +108,34 @@ p {
     height: 100px;
     width: 200px;
     clip-path: polygon(17% 0, 69% 18%, 100% 100%, 22% 50%);
-
+    -webkit-animation:spin1 .8s linear reverse;
+    -moz-animation:spin1 .6s linear reverse;
+    animation:spin1 .6s linear reverse;
 }
+@-moz-keyframes spin1 { 100% { -moz-transform: rotate(45deg); } }
+@-webkit-keyframes spin1 { 100% { -webkit-transform: rotate(45deg); } }
+@keyframes spin1 { 100% { -webkit-transform: rotate(45deg); transform:rotate(45deg); } }
+.b1a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: prism1;
+    background: lightgray;
+    height: 100px;
+    width: 200px;
+    clip-path: polygon(17% 0, 69% 18%, 100% 100%, 22% 50%);
+    -webkit-animation:spin1 .8s linear normal;
+    -moz-animation:spin1 .6s linear normal;
+    animation:spin1 .6s linear normal;
+}
+@-moz-keyframes spin1 { 100% { -moz-transform: rotate(45deg); } }
+@-webkit-keyframes spin1 { 100% { -webkit-transform: rotate(45deg); } }
+@keyframes spin1 { 100% { -webkit-transform: rotate(45deg); transform:rotate(45deg); } }
+
 .prismWrap2{
     filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
 }
+
 .b2{
     display: flex;
     align-items: center;
@@ -116,6 +146,17 @@ p {
     height: 100px;
     width: 90px;
     clip-path: polygon(50% 100%, 20% 38%, 50% 0, 80% 38%);
+}
+.b2a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: prism2;
+    background: lightgray;
+    color: darkgrey;
+    height: 100px;
+    width: 90px;
+    clip-path: polygon(50% 100%, 24% 63%, 50% 0, 76% 63%);
 }
 .prismWrap3{
     filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
@@ -130,8 +171,16 @@ p {
     height: 100px;
     width: 200px;
     clip-path: polygon(23% 10%, 62% 2%, 65% 50%, 0% 100%);
-
+    -webkit-animation:spin3 .6s linear reverse;
+    -moz-animation:spin3 .6s linear reverse;
+    animation:spin3 .6s linear reverse;
 }
+@-moz-keyframes spin3 { 100% { -moz-transform: rotate(-45deg); } }
+@-webkit-keyframes spin3 { 100% { -webkit-transform: rotate(-45deg); } }
+@keyframes spin3 { 100% { -webkit-transform: rotate(-45deg); transform:rotate(-45deg); } }
+
+
+
 .prismWrap4{
     filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
     border: 5px black;
@@ -146,8 +195,14 @@ p {
     height: 100px;
     width: 200px;
     clip-path: polygon(17% 100%, 33% 49%, 100% 0, 62% 77%);
-
+    -webkit-animation:spin4 .6s linear reverse;
+    -moz-animation:spin4 .6s linear reverse;
+    animation:spin4 .6s linear reverse;
 }
+@-moz-keyframes spin4 { 100% { -moz-transform: rotate(-45deg); } }
+@-webkit-keyframes spin4 { 100% { -webkit-transform: rotate(-45deg); } }
+@keyframes spin4 { 100% { -webkit-transform: rotate(-45deg); transform:rotate(-45deg); } }
+
 .prismWrap5{
     filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
 }
@@ -155,14 +210,32 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-
     grid-area: prism5;
     background: lightgray;
-    color: silver;
     height: 100px;
     width: 90px;
     clip-path: polygon(50% 100%, 24% 63%, 50% 0, 76% 63%);
 }
+.b5a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: prism5;
+    background: grey;
+    height: 100px;
+    width: 90px;
+    clip-path: polygon(50% 100%, 24% 63%, 50% 0, 76% 63%);
+    box-shadow: 5px 5px 5px silver;
+    border: 2px silver;
+    -webkit-animation:spin5 4s linear reverse;
+    -moz-animation:spin5 4s linear reverse;
+    animation:spin5 4s linear reverse;
+}
+@-moz-keyframes spin5 { 100% { -moz-transform: rotate(180deg); } }
+@-webkit-keyframes spin5 { 100% { -webkit-transform: rotate(180deg); } }
+@keyframes spin5 { 100% { -webkit-transform: rotate(180deg); transform:rotate(180deg); } }
+
+
 .prismWrap6{
     filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
 }
@@ -172,14 +245,25 @@ p {
     justify-content: center;
     grid-area: prism6;
     background: lightgray;
-    color: silver;
     height: 100px;
     width: 200px;
     clip-path: polygon(0 0, 76% 44%, 89% 100%, 33% 79%);
-
+    -webkit-animation:spin6 .6s linear reverse;
+    -moz-animation:spin6 .6s linear reverse;
+    animation:spin6 .6s linear reverse;
 }
-body, html {
-    height: 100%;
+@-moz-keyframes spin6 { 100% { -moz-transform: rotate(45deg); } }
+@-webkit-keyframes spin6 { 100% { -webkit-transform: rotate(45deg); } }
+@keyframes spin6 { 100% { -webkit-transform: rotate(45deg); transform:rotate(45deg); } }
+
+.b6A{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: prism6;
+    background: blue;
+    height: 100px;
+    width: 200px;
 }
 
 .bg {
@@ -191,7 +275,7 @@ body, html {
 }
 .main-contain{
     background: lightslategrey;
-    border: 2px whitesmoke solid;
+    /*border: 2px whitesmoke solid;*/
     border-radius: 4px;
     padding: 30px
 }
@@ -216,6 +300,34 @@ body, html {
     justify-content: center;
 }
 
+.imgSkull{
+    position: absolute;
+}
 
+.skullVoda{
+    z-index: 0;
+    font-size: 100px;
+    color: rgba(100,100,100, .3);
+    margin: 0;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    margin:-60px 0 0 -60px;
+    -webkit-animation:spin 4s linear normal;
+    -moz-animation:spin 4s linear normal;
+    animation:spin 4s linear normal;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 
