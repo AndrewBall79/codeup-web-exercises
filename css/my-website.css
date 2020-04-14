@@ -85,6 +85,7 @@ p {
 }
 
 .prismGrid{
+    position: relative;
     max-width: 600px;
     display: grid;
     height: 38vh;
@@ -261,11 +262,17 @@ p {
     align-items: center;
     justify-content: center;
     grid-area: prism6;
-    background: blue;
+    background: rgba(120,0,0,.3);
     height: 100px;
     width: 200px;
+    -webkit-animation:polygon6 2s linear  ;
+    -moz-animation:polygon6 2s linear  ;
+    animation: polygon6 2s linear  ;
 }
-
+@keyframes polygon6 {
+    0% {clip-path: polygon(0 0, 76% 44%, 89% 100%, 33% 79%);}
+    100% {clip-path: polygon(0 0, 30% 40%, 89% 100%, 33% 79%);}
+}
 .bg {
     background: linear-gradient(rgba(150, 150, 150, .7),rgba(100, 100, 137, .7));
 

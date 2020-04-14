@@ -19,21 +19,23 @@ $(".subheader").click(function () {
 
 $(".main-contain").hide();
 $(".b1").click(function() {
-    $(".b1").toggleClass("b6A");
+    $(".prismGrid").animate({right: '250px'});
+    $(".jumbotron-fluid").toggle("slow", "swing");
     $(".main-contain").slideToggle("slow");
-    // $(".jumbotron-fluid").toggle("slow", "swing");
+    $(".b1, .b4").fadeOut();
+
 });
 
 $(".b2").click(function() {
     $(".b2").toggleClass("b2a");
-    $(".main-contain").slideToggle("slow");
     $(".jumbotron-fluid").toggle("slow", "swing");
 });
 
 $(".b3").click(function() {
-    $(".b3").toggleClass("b6A");
+    $(".prismGrid").animate({left: '250px'});
+    $(".jumbotron-fluid").toggle("slow", "swing");
     $(".main-contain").slideToggle("slow");
-    // $(".jumbotron-fluid").toggle("slow", "swing");
+    $(".b3, .b6").fadeOut();
 });
 
 $(".b4").click(function() {
@@ -45,6 +47,11 @@ $(".b4").click(function() {
 $(".image").hide();
 $(".b5").click(function() {
     $(".b5").toggleClass("b5a");
+    $(".image").toggle("slow");
+    // $(".jumbotron-fluid").toggle("slow", "swing");
+});
+$(".ba5").click(function() {
+    $(this).toggleClass("b5");
     $(".image").toggle("slow");
     // $(".jumbotron-fluid").toggle("slow", "swing");
 });
