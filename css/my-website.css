@@ -29,7 +29,7 @@ body{
 /*}*/
 
 .top-name{
-    font-family: 'Notable', sans-serif;
+    font-family: "Heiti SC", sans-serif;
     display: flex;
     color: silver;
     justify-content: center;
@@ -37,14 +37,7 @@ body{
     text-shadow: black 2px 2px 5px;
 }
 
-.second-name{
-    font-size: 25px;
-    font-family: 'Notable', sans-serif;
-    display: flex;
-    color: silver;
-    justify-content: center;
-    text-shadow: black 2px 2px 5px;
-}
+
 .forefront-element{
     /*font-family: 'Expletus Sans', cursive;*/
     font-family: "Heiti SC", sans-serif;
@@ -157,8 +150,28 @@ p {
     color: darkgrey;
     height: 100px;
     width: 90px;
-    clip-path: polygon(50% 100%, 24% 63%, 50% 0, 76% 63%);
+    -webkit-animation:polygon2 2s forwards  ;
+    -moz-animation:polygon2 2s forwards  ;
+    animation: polygon2 2s forwards  ;
 }
+@keyframes polygon2 {
+    0%   {background-color: lightgrey;}
+    50%   {background-color: red;}
+    100%  {background-color: lightgrey;}
+    0% {clip-path: polygon(50% 100%, 20% 38%, 50% 0, 80% 38%);}
+    50% {clip-path: polygon(50% 50%, 50% 50%, 50% 500%, 50% 50%);}
+    100% {clip-path:polygon(50% 50%, 0% 100%, 50% 0, 100% 100%);}
+    100% { height: 120px; width: 150px;}
+}
+@-webkit-keyframes polygon2 {
+    0%   {background-color: lightgrey;}
+    50%   {background-color: red;}
+    100%  {background-color: lightgrey;}
+    0% {clip-path: polygon(50% 100%, 20% 38%, 50% 0, 80% 38%);}
+    50% {clip-path: polygon(50% 50%, 50% 50%, 50% 500%, 50% 50%);}
+    100% {clip-path:polygon(50% 50%, 0% 100%, 50% 0, 100% 100%);}
+}
+
 .prismWrap3{
     filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
 }
@@ -195,7 +208,8 @@ p {
     background: lightgray;
     height: 100px;
     width: 200px;
-    clip-path: polygon(17% 100%, 33% 49%, 100% 0, 62% 77%);
+
+    clip-path: polygon(17% 100%, 30% 45%, 100% 0, 62% 77%);
     -webkit-animation:spin4 .6s linear reverse;
     -moz-animation:spin4 .6s linear reverse;
     animation:spin4 .6s linear reverse;
@@ -225,16 +239,25 @@ p {
     background: grey;
     height: 100px;
     width: 90px;
-    clip-path: polygon(50% 100%, 24% 63%, 50% 0, 76% 63%);
     box-shadow: 5px 5px 5px silver;
     border: 2px silver;
-    -webkit-animation:spin5 4s linear reverse;
-    -moz-animation:spin5 4s linear reverse;
-    animation:spin5 4s linear reverse;
+    -webkit-animation:spin5 3s linear forwards;
+    -moz-animation:spin5 3s linear forwards;
+    animation:spin5 3s linear forwards;
 }
-@-moz-keyframes spin5 { 100% { -moz-transform: rotate(180deg); } }
-@-webkit-keyframes spin5 { 100% { -webkit-transform: rotate(180deg); } }
-@keyframes spin5 { 100% { -webkit-transform: rotate(180deg); transform:rotate(180deg); } }
+
+@-moz-keyframes spin5 {
+    50% {clip-path:polygon(50% 50%, 0% 100%, 50% 0, 100% 100%);}
+    100% {clip-path:polygon(50% 50%, 25% 50%, 50% 100%, 75% 50%);}
+    100% { -moz-transform: rotate(180deg);}}
+@-webkit-keyframes spin5 {
+    50% {clip-path:polygon(50% 50%, 0% 100%, 50% 0, 100% 100%);}
+    100% {clip-path:polygon(50% 50%, 25% 50%, 50% 100%, 75% 50%);}
+    100% { -webkit-transform: rotate(180deg);}}
+@keyframes spin5 {
+    50% {clip-path:polygon(50% 50%, 0% 100%, 50% 0, 100% 100%);}
+    100% {clip-path:polygon(50% 50%, 25% 50%, 50% 100%, 75% 50%);}
+    100% { -webkit-transform: rotate(180deg); transform:rotate(180deg);}}
 
 
 .prismWrap6{
@@ -253,9 +276,12 @@ p {
     -moz-animation:spin6 .6s linear reverse;
     animation:spin6 .6s linear reverse;
 }
-@-moz-keyframes spin6 { 100% { -moz-transform: rotate(45deg); } }
-@-webkit-keyframes spin6 { 100% { -webkit-transform: rotate(45deg); } }
-@keyframes spin6 { 100% { -webkit-transform: rotate(45deg); transform:rotate(45deg); } }
+@-moz-keyframes spin6 {
+    100% { -moz-transform: rotate(45deg); } }
+@-webkit-keyframes spin6 {
+    100% { -webkit-transform: rotate(45deg); } }
+@keyframes spin6 {
+    100% { -webkit-transform: rotate(45deg); transform:rotate(45deg); } }
 
 .b6A{
     display: flex;
@@ -265,13 +291,13 @@ p {
     background: rgba(120,0,0,.3);
     height: 100px;
     width: 200px;
-    -webkit-animation:polygon6 2s linear  ;
-    -moz-animation:polygon6 2s linear  ;
-    animation: polygon6 2s linear  ;
+    -webkit-animation:polygon6 2s forwards  ;
+    -moz-animation:polygon6 2s forwards  ;
+    animation: polygon6 2s forwards  ;
 }
 @keyframes polygon6 {
     0% {clip-path: polygon(0 0, 76% 44%, 89% 100%, 33% 79%);}
-    100% {clip-path: polygon(0 0, 30% 40%, 89% 100%, 33% 79%);}
+    100% {clip-path: polygon(0 0, 30% 40%, 89% 0%, 33% 79%);}
 }
 .bg {
     background: linear-gradient(rgba(150, 150, 150, .7),rgba(100, 100, 137, .7));
@@ -329,9 +355,9 @@ p {
     width: 120px;
     height: 120px;
     margin:-60px 0 0 -60px;
-    -webkit-animation:spin 4s linear normal;
-    -moz-animation:spin 4s linear normal;
-    animation:spin 4s linear normal;
+    -webkit-animation:spin 3s linear normal;
+    -moz-animation:spin 3s linear normal;
+    animation:spin 3s linear normal;
 }
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
