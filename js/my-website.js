@@ -53,6 +53,7 @@ $(".b5").click(function() {
 
 $(".b6").click(function() {
     $(".main-contain").slideToggle("slow");
+    $(".b6").toggleClass("b6a");
 });
 
 $(".image").click(function () {

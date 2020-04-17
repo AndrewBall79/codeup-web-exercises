@@ -87,6 +87,37 @@ p {
     grid-template-areas:
                 "prism1 prism2 prism3"
                 "prism4 prism5 prism6";
+
+}
+.prismGridBk{
+    position: absolute;
+    width: 100%;
+    height: 38vh;
+    border: 10px rgba(100,100,100, .6) solid;
+    background-color: silver;
+    -webkit-animation:prismAni 2s infinite  ;
+    -moz-animation:prismAni 2s infinite  ;
+    animation: prismAni 2s infinite  ;
+}
+@keyframes prismAni {
+    0%   {background-color: rgba(100,100,100, .3);}
+    10%   {background-color: black;}
+    20%  {background-color: rgba(100,100,100, .5);}
+    40%   {background-color: black;}
+    60%  {background-color: rgba(100,100,100, .3);}
+    70%   {background-color: black;}
+    75%  {background-color: rgba(100,100,100, .5);}
+    80%   {background-color: black;}
+    90%  {background-color: rgba(100,100,100, .3);}
+    95%   {background-color: black;}
+    98%  {background-color: rgba(100,100,100, .3);}
+    100%  {background-color: black;}
+    0% {clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);}
+    25% {clip-path: polygon(0% 0%, 100% 0%, 0% 100%, 100% 100%);}
+    50% {clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);}
+    100% {clip-path: polygon(-100% 0%, 200% 0%, -100% 100%, 200% 100%);}
+
+
 }
 .prismWrap{
     filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
@@ -171,6 +202,14 @@ p {
     50% {clip-path: polygon(50% 50%, 50% 50%, 50% 500%, 50% 50%);}
     100% {clip-path:polygon(50% 50%, 0% 100%, 50% 0, 100% 100%);}
 }
+@-moz-keyframes polygon2 {
+    0%   {background-color: lightgrey;}
+    50%   {background-color: red;}
+    100%  {background-color: lightgrey;}
+    0% {clip-path: polygon(50% 100%, 20% 38%, 50% 0, 80% 38%);}
+    50% {clip-path: polygon(50% 50%, 50% 50%, 50% 500%, 50% 50%);}
+    100% {clip-path:polygon(50% 50%, 0% 100%, 50% 0, 100% 100%);}
+}
 
 .prismWrap3{
     filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
@@ -208,7 +247,6 @@ p {
     background: lightgray;
     height: 100px;
     width: 200px;
-
     clip-path: polygon(17% 100%, 30% 45%, 100% 0, 62% 77%);
     -webkit-animation:spin4 .6s linear reverse;
     -moz-animation:spin4 .6s linear reverse;
@@ -217,12 +255,41 @@ p {
 @-moz-keyframes spin4 { 100% { -moz-transform: rotate(-45deg); } }
 @-webkit-keyframes spin4 { 100% { -webkit-transform: rotate(-45deg); } }
 @keyframes spin4 { 100% { -webkit-transform: rotate(-45deg); transform:rotate(-45deg); } }
-
-.prismWrap5{
-    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
-}
-.b5{
+.b4A{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: prism6;
+    background: rgb(120,0,0);
+    height: 100px;
+    width: 200px;
+    -webkit-animation:polygon4 2s forwards  ;
+    -moz-animation:polygon4 2s forwards  ;
+    animation: polygon4 2s forwards  ;
+}
+@keyframes polygon4 {
+    100% {clip-path: polygon(0 0, 60% 45%, 100% 0, 62% 77%);}
+}
+.PW5{
+    -webkit-animation:PS5 3s linear forwards;
+    -moz-animation:PS5 3s linear forwards;
+    animation:PS5 3s linear forwards;
+}
+@-moz-keyframes PS5 {
+    0% {filter: drop-shadow(0px 0px 0px whitesmoke);}
+    50% {filter: drop-shadow(0px 6px 10px whitesmoke);}
+    100% {filter: drop-shadow(0px 0px 0px whitesmoke);}}
+
+@-webkit-keyframes PS5 {
+    0% {filter: drop-shadow(0px 0px 0px whitesmoke);}
+    50% {filter: drop-shadow(0px 6px 10px whitesmoke);}
+    100% {filter: drop-shadow(0px 0px 0px whitesmoke);}}
+@keyframes PS5 {
+    0% {filter: drop-shadow(0px 0px 0px whitesmoke);}
+    50% {filter: drop-shadow(0px 6px 10px whitesmoke);}
+    100% {filter: drop-shadow(0px 0px 0px whitesmoke);}}
+
+.b5{
     align-items: center;
     justify-content: center;
     grid-area: prism5;
@@ -238,30 +305,44 @@ p {
     grid-area: prism5;
     background: grey;
     height: 100px;
-    width: 90px;
-    box-shadow: 5px 5px 5px silver;
-    border: 2px silver;
+    width: 100px;
     -webkit-animation:spin5 3s linear forwards;
     -moz-animation:spin5 3s linear forwards;
     animation:spin5 3s linear forwards;
 }
 
 @-moz-keyframes spin5 {
+    0%   {background-color: lightgrey;}
+    50%   {background-color: blue;}
+    100%  {background-color: lightgrey;}
+    50% {box-shadow: 2px 2px 5px #DDDDDD}
+    100%  {height: 200px; width: 200px;}
+
     50% {clip-path:polygon(50% 50%, 0% 100%, 50% 0, 100% 100%);}
     100% {clip-path:polygon(50% 50%, 25% 50%, 50% 100%, 75% 50%);}
-    100% { -moz-transform: rotate(180deg);}}
+    100% { -moz-transform: rotate(180deg);}
+}
 @-webkit-keyframes spin5 {
+    0%   {background-color: lightgrey;}
+    50%   {background-color: blue;}
+    100%  {background-color: lightgrey;}
+    50% {box-shadow: 2px 2px 5px #DDDDDD}
     50% {clip-path:polygon(50% 50%, 0% 100%, 50% 0, 100% 100%);}
     100% {clip-path:polygon(50% 50%, 25% 50%, 50% 100%, 75% 50%);}
-    100% { -webkit-transform: rotate(180deg);}}
+    100% { -webkit-transform: rotate(180deg);}
+}
 @keyframes spin5 {
+    0%   {background-color: lightgrey;}
+    50%   {background-color: blue;}
+    100%  {background-color: lightgrey;}
+    50% {box-shadow: 2px 2px 5px #DDDDDD}
     50% {clip-path:polygon(50% 50%, 0% 100%, 50% 0, 100% 100%);}
     100% {clip-path:polygon(50% 50%, 25% 50%, 50% 100%, 75% 50%);}
-    100% { -webkit-transform: rotate(180deg); transform:rotate(180deg);}}
+    100% { -webkit-transform: rotate(180deg); transform:rotate(180deg);}
+}
 
 
 .prismWrap6{
-    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
 }
 .b6{
     display: flex;
@@ -283,12 +364,12 @@ p {
 @keyframes spin6 {
     100% { -webkit-transform: rotate(45deg); transform:rotate(45deg); } }
 
-.b6A{
+.b6a{
     display: flex;
     align-items: center;
     justify-content: center;
     grid-area: prism6;
-    background: rgba(120,0,0,.3);
+    background: rgb(120,0,0);
     height: 100px;
     width: 200px;
     -webkit-animation:polygon6 2s forwards  ;
@@ -359,8 +440,18 @@ p {
     -moz-animation:spin 3s linear normal;
     animation:spin 3s linear normal;
 }
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@-moz-keyframes spin {
+    90% { -moz-transform: rotate(370deg); }
+    100% { -moz-transform: rotate(360deg); } }
 
+@-webkit-keyframes spin {
+    90% { -webkit-transform: rotate(370deg); }
+    100% { -webkit-transform: rotate(360deg); }
+
+}
+@keyframes spin {
+    90% { -webkit-transform: rotate(370deg); transform:rotate(370deg); }
+    100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
+
+}
 
