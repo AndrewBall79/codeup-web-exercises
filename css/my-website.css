@@ -389,6 +389,8 @@ p {
     background: lightgrey;
 }
 .main-contain{
+    display: flex;
+    justify-content: center;
     background: lightslategrey;
     /*border: 2px whitesmoke solid;*/
     border-radius: 4px;
